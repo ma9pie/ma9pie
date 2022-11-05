@@ -7,10 +7,6 @@
 ![ma9pie's GitHub stats](https://github-readme-stats.vercel.app/api?username=ma9pie&show_icons=true&theme=radical)   
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=K-Junyyy&layout=compact&theme=dark) 
     
-# 🏅 Baekjoon solved rank
-[![Solved.ac Profile](http://mazassumnida.wtf/api/generate_badge?boj=cocoon)](https://solved.ac/cocoon)  
-
-
 # 📚 Tech stack
 [![My Skills](https://skillicons.dev/icons?i=html,css,js,react,nextjs,redux,emotion,sass&perline=5)](https://skillicons.dev)
 <br/>
