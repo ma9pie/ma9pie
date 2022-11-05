@@ -1,16 +1,13 @@
-### Hi there 👋
+# 👋 Hi there 
+안녕하세요 프론트엔드 개발자 김준영이라고 합니다.
 
-<!--
-**ma9pie/ma9pie** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+# 📚 Tech stack
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,react,nextjs,redux,emotion,sass&perline=5)](https://skillicons.dev)
+<br/>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+
+# 🔨 Tools
+[![My Skills](https://skillicons.dev/icons?i=git,github,gitlab,vscode,aws,jenkins,figma)](https://skillicons.dev)
+
