@@ -8,11 +8,11 @@
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=K-Junyyy&layout=compact&theme=dark) 
     
 # 📚 Tech stack
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,react,nextjs,redux,emotion,sass&perline=5)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,react,nextjs,redux,emotion,sass&perline=4)](https://skillicons.dev)
 <br/>
 
 
 
 # 🔨 Tools
-[![My Skills](https://skillicons.dev/icons?i=git,github,gitlab,vscode,aws,jenkins,figma)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=git,github,gitlab,vscode,aws,jenkins,figma&perline=4)](https://skillicons.dev)
 
