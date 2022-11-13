@@ -8,7 +8,7 @@
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ma9pie&layout=compact&theme=transparent) 
     
 # 📚 Tech stack
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,react,nextjs,redux,emotion,sass&perline=4)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,react,nextjs,redux,emotion,sass,mongodb,mysql&perline=4)](https://skillicons.dev)
 <br/>
 
 
