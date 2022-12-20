@@ -1,4 +1,4 @@
-# 💎 Simple is best.
+# 💎 Simple is best
 
 👋 안녕하세요 Frontend Developer 김준영입니다.  
 📝 누구나 이해하기 쉽고, 유지보수가 용이한 코드 작성을 지향합니다.  
