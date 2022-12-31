@@ -11,6 +11,12 @@
 - 공통 컴포넌트 생성에 관심이 많습니다.  
 - 성능 최적화를 했을 때 보람을 느낍니다.  
 
+저는 현재 암호화폐 거래소 캐셔레스트에서 Frontend Developer로 근무중입니다.  
+궁금한 사항이 있으시다면 아래의 메일로 문의주시길 바랍니다,,,!  
+ma9pie.dev@gmail.com
+
+
+
 # 👨🏻‍💻 GitHub stats
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fma9pie&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com) 
 
