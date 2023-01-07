@@ -12,8 +12,9 @@
 - 성능 최적화를 했을 때 보람을 느낍니다.  
 
 현재 암호화폐 거래소 캐셔레스트에서 Frontend Developer로 근무중입니다.  
-궁금한 사항이 있으시다면 아래의 메일로 문의주시길 바랍니다.  
-ma9pie.dev@gmail.com
+
+👨🏻‍💻tech blog : https://cocoon1787.tistory.com  
+✉️contact : ma9pie.dev@gmail.com  
 
 
 
