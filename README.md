@@ -11,13 +11,16 @@
 ![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fma9pie&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)
 
 <div style="display: flex">
+    <img width="50%" src="https://api.opgc.me/githubs/users/ma9pie/tag/?theme=dracula" />
+</div>
+
+<div style="display: flex">
     <img width="100%" src="https://github-profile-trophy.vercel.app/?username=ma9pie&no-bg=true&column=7&theme=darkhub" />
 </div>
 
 <div style="display: flex">
-    <img width="29%" height="160px" src="https://api.opgc.me/githubs/users/ma9pie/tag/?theme=dracula" />
-    <img width="33%" height="160px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ma9pie&layout=compact&theme=transparent" />  
-    <img width="37%" height="160px" src="https://github-readme-stats.vercel.app/api?username=ma9pie&show_icons=true&theme=transparent" />
+     <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ma9pie&layout=compact&theme=transparent" />  
+    <img width="49%" src="https://github-readme-stats.vercel.app/api?username=ma9pie&show_icons=true&theme=transparent" />
 </div>
 
 <div style="display: flex">
