@@ -4,8 +4,9 @@
 ✨ 제품의 퀄리티와 사용자 경험을 중요시합니다.  
 🔥 새로운 기술에 대해 호기심이 많고, 더 성장하고자 하는 열망이 강합니다.  
 
+요즘엔 Typescript를 공부하고 있습니다.
+
 <br/>  
-  
 
 # 👨🏻‍💻 GitHub stats
 ![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fma9pie&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)
