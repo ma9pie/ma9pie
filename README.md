@@ -44,6 +44,6 @@
 
 
 # 🔗 Link
-👨🏻‍💻tech blog : https://cocoon1787.tistory.com  
-✉️contact : ma9pie.dev@gmail.com  
+👨🏻‍💻 tech blog : https://cocoon1787.tistory.com  
+✉️ contact : ma9pie.dev@gmail.com  
 
