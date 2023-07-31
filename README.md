@@ -5,7 +5,7 @@
 ✨ 제품의 퀄리티와 사용자 경험을 중요시합니다.  
 🔥 새로운 기술에 대해 호기심이 많고, 더 성장하고자 하는 열망이 강합니다.  
 
-요즘엔 Typescript, Tailwindcss, Recoil, Rxjs를 공부하고 있습니다.
+요즘엔 Typescript, Tailwindcss를 공부하고 있습니다.
 
 <br/>  
 
