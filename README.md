@@ -33,13 +33,13 @@
     
  
 # 📚 Tech stack
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,react,nextjs,redux,emotion,tailwind,sass&perline=5)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,ts,react,nextjs,redux,emotion,tailwind,sass&perline=5)](https://skillicons.dev)
 
 <br/>
 
 
 # 🔨 Tools
-[![My Skills](https://skillicons.dev/icons?i=git,github,gitlab,vscode,aws,jenkins,figma&perline=5)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=git,github,gitlab,vscode,aws,jenkins,figma,sentry&perline=5)](https://skillicons.dev)
 
 <br/>
 
