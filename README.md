@@ -47,6 +47,6 @@ Tradingview chart library로 Chart를 구현하고 Customizing할 수 있습니�
 
 
 # 🔗 Link
-👨🏻‍💻 tech blog : https://cocoon1787.tistory.com  
-✉️ contact : ma9pie.dev@gmail.com  
+👨🏻‍💻 Tech blog : https://cocoon1787.tistory.com  
+✉️ Contact : ma9pie.dev@gmail.com  
 
