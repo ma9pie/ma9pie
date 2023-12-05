@@ -21,12 +21,11 @@
 </div>
 
 <div style="display: flex">
-     <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ma9pie&layout=compact&theme=transparent" />  
-    <img width="49%" src="https://github-readme-stats.vercel.app/api?username=ma9pie&show_icons=true&theme=transparent" />
+     <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ma9pie&layout=compact&theme=transparent" />  
 </div>
 
 <div style="display: flex">
-    <img width="100%" src="https://github-readme-activity-graph.cyclic.app/graph?username=ma9pie&theme=github-compact"/>   
+    <img width="100%" src="https://github-readme-stats.vercel.app/api?username=ma9pie&show_icons=true&theme=transparent" />
 </div>
 
 <br/>
