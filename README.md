@@ -17,15 +17,7 @@
 </div>
 
 <div style="display: flex">
-    <img width="100%" src="https://github-profile-trophy.vercel.app/?username=ma9pie&no-bg=true&column=7&theme=darkhub" />
-</div>
-
-<div style="display: flex">
-     <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ma9pie&layout=compact&theme=transparent" />  
-</div>
-
-<div style="display: flex">
-    <img width="100%" src="https://github-readme-stats.vercel.app/api?username=ma9pie&show_icons=true&theme=transparent" />
+    <img width="100%" src="https://github-profile-trophy.vercel.app/?username=ma9pie&no-bg=true&column=4&theme=darkhub" />
 </div>
 
 <br/>
