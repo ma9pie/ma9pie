@@ -5,10 +5,10 @@ import Footer from '@/components/layouts/Footer';
 import Header from '@/components/layouts/Header';
 
 interface Props {
-  children?: ReactNode;
+  children: ReactNode;
 }
 
-const Layout = ({ children }: Props) => {
+const PageLayout = ({ children }: Props) => {
   return (
     <Wrapper>
       <Header></Header>
@@ -18,7 +18,7 @@ const Layout = ({ children }: Props) => {
   );
 };
 
-export default Layout;
+export default PageLayout;
 
 const Wrapper = styled.div`
   ${tw`relative flex flex-col`};
