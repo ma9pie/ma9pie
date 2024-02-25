@@ -20,9 +20,9 @@ const Header = () => {
   return (
     <Wrapper>
       {MENU_LIST.map(({ label, url }) => (
-        <Menu key={label} href={url} active={url === router.pathname}>
-          {label}
-        </Menu>
+        <Link key={label} href={url}>
+          <Menu active={url === router.pathname}>{label}</Menu>
+        </Link>
       ))}
     </Wrapper>
   );
@@ -31,11 +31,11 @@ const Header = () => {
 export default Header;
 
 const Wrapper = styled.div`
-  ${tw`fixed top-0 flex justify-center items-center gap-8 w-full h-16 backdrop-blur-sm`};
+  ${tw`fixed top-0 flex justify-center items-center w-full h-16 backdrop-blur-sm`};
   ${tw`mobile:px-4`};
   ${tw`desktop:px-6`};
 `;
-const Menu = styled(Link)<{ active: boolean }>`
-  ${tw`font-semibold`};
+const Menu = styled.div<{ active: boolean }>`
+  ${tw`font-semibold p-4`};
   ${(props) => (props.active ? tw`text-neutral-900` : tw`text-neutral-300`)};
 `;
