@@ -6,7 +6,8 @@ import { DefaultSeo } from 'next-seo';
 import { useEffect } from 'react';
 
 import { initializeGA, trackPageView } from '@/utils';
-import seoConfig from '~/next-seo.config';
+
+import seoConfig from '../../next-seo.config';
 
 const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
