@@ -36,6 +36,9 @@ const Wrapper = styled.div`
   ${tw`desktop:px-6`};
 `;
 const Menu = styled.div<{ active: boolean }>`
-  ${tw`font-semibold p-4`};
-  ${(props) => (props.active ? tw`text-neutral-900` : tw`text-neutral-300`)};
+  ${tw`font-bold p-4 transition-colors duration-200`};
+  ${(props) =>
+    props.active
+      ? tw`text-neutral-900`
+      : tw`text-neutral-300 hover:text-neutral-500`};
 `;
