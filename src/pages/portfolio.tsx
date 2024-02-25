@@ -7,7 +7,7 @@ import Portfolio from '@/components/pages/Portfolio';
 const PortfolioPage = () => {
   return (
     <Layout>
-      <Head></Head>
+      <Head title="Portfolio"></Head>
       <Portfolio></Portfolio>
     </Layout>
   );
