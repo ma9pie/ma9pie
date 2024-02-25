@@ -16,7 +16,7 @@ const Footer = () => {
 export default Footer;
 
 const Wrapper = styled.div`
-  ${tw`fixed bottom-0 flex items-center w-full h-8 backdrop-blur-lg`};
+  ${tw`fixed bottom-0 flex items-center w-full h-8 bg-neutral-50 border-t border-solid border-neutral-200`};
   ${tw`mobile:px-4`};
   ${tw`desktop:px-6`};
 `;

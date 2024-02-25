@@ -31,7 +31,7 @@ const Header = () => {
 export default Header;
 
 const Wrapper = styled.div`
-  ${tw`fixed top-0 flex justify-center items-center w-full h-16 backdrop-blur-sm`};
+  ${tw`fixed top-0 flex justify-center items-center w-full h-16 backdrop-blur-md shadow-xl`};
   ${tw`mobile:px-4`};
   ${tw`desktop:px-6`};
 `;

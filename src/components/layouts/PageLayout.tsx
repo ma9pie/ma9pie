@@ -21,7 +21,7 @@ const PageLayout = ({ children }: Props) => {
 export default PageLayout;
 
 const Wrapper = styled.div`
-  ${tw`relative flex flex-col`};
+  ${tw`relative flex flex-col pt-16 pb-8`};
 `;
 const Content = styled.div`
   ${tw`flex-1 flex flex-col max-w-[800px] w-full mx-auto`};
