@@ -2,15 +2,15 @@ import React from 'react';
 
 import Head from '@/components/layouts/Head';
 import Layout from '@/components/layouts/Layout';
-import Resume from '@/components/pages/Resume';
+import Portfolio from '@/components/pages/Portfolio';
 
-const ResumePage = () => {
+const PortfolioPage = () => {
   return (
     <Layout>
       <Head></Head>
-      <Resume></Resume>
+      <Portfolio></Portfolio>
     </Layout>
   );
 };
 
-export default ResumePage;
+export default PortfolioPage;
