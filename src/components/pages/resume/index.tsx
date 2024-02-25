@@ -14,12 +14,19 @@ const Resume = () => {
   return (
     <Wrapper>
       <Info></Info>
+      <Divider></Divider>
       <Introduction></Introduction>
+      <Divider></Divider>
       <Type></Type>
+      <Divider></Divider>
       <Experiences></Experiences>
+      <Divider></Divider>
       <Skills></Skills>
+      <Divider></Divider>
       <Blog></Blog>
+      <Divider></Divider>
       <Articles></Articles>
+      <Divider></Divider>
       <Education></Education>
     </Wrapper>
   );
@@ -29,6 +36,9 @@ export default Resume;
 
 const Wrapper = styled.div`
   ${tw`flex flex-col`};
-  ${tw`mobile:gap-12`};
-  ${tw`desktop:gap-20`};
+`;
+const Divider = styled.div`
+  ${tw`w-full h-px bg-neutral-200`};
+  ${tw`mobile:my-12`};
+  ${tw`desktop:my-20`};
 `;
