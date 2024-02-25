@@ -7,9 +7,11 @@ const Introduction = () => {
   return (
     <Wrapper>
       <Text.Title>Introduction</Text.Title>
-      <TextBox>
+
+      <div>
         <Text.P>
-          안녕하세요! 곧 3년 차가 되어가는 Frontend 개발자 김준영이라고 합니다!
+          안녕하세요! 곧 3년 차가 되어가는 Frontend Developer 김준영이라고
+          합니다!
         </Text.P>
         <Text.P>
           현재 수호아이오에서 FE 개발을 하고 있으며, 웹 서비스 런칭 및 운영을 한
@@ -22,11 +24,11 @@ const Introduction = () => {
         </Text.P>
         <Text.P>
           웹 개발시 저의 가장 큰 관심사는 최적화 부분이고 이를 수행하는 과정에서
-          웹의 성능을 향상하는 다양한 기술과 방법을 연구하고 적용하고 있 습니다.
+          웹의 성능을 향상하는 다양한 기술과 방법을 연구하고 적용하고 있습니다.
           이를 통해 웹사이트의 로딩 속도를 줄이고 사용자 경험을 높이는데 중점을
           두고 있습니다.
         </Text.P>
-      </TextBox>
+      </div>
     </Wrapper>
   );
 };
@@ -37,7 +39,4 @@ const Wrapper = styled.div`
   ${tw`flex flex-col`};
   ${tw`mobile:gap-4`};
   ${tw`desktop:gap-8`};
-`;
-const TextBox = styled.div`
-  ${tw``};
 `;
