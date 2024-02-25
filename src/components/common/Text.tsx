@@ -127,6 +127,22 @@ const Text = ({
   );
 };
 
+Text.Title = styled.h3`
+  ${tw`font-semibold`};
+  ${tw`mobile:text-3xl`};
+  ${tw`desktop:text-5xl`};
+`;
+Text.SubTitle = styled.h5`
+  ${tw`font-semibold`};
+  ${tw`mobile:text-xl`};
+  ${tw`desktop:text-3xl`};
+`;
+Text.P = styled.p`
+  ${tw`mb-2`};
+  ${tw`mobile:text-base`};
+  ${tw`desktop:text-xl`};
+`;
+
 export default Text;
 
 const P = styled.p<Props>`
