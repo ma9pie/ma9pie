@@ -7,7 +7,7 @@ import Resume from '@/components/pages/Resume';
 const ResumePage = () => {
   return (
     <Layout>
-      <Head></Head>
+      <Head title="Resume"></Head>
       <Resume></Resume>
     </Layout>
   );
