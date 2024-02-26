@@ -1,5 +1,4 @@
 import React from 'react';
-import tw, { styled } from 'twin.macro';
 
 import { Li, Ul } from '@/components/common/List';
 import Text from '@/components/common/Text';
@@ -32,7 +31,3 @@ const Type = () => {
 };
 
 export default Type;
-
-const TextBox = styled.div`
-  ${tw``};
-`;
