@@ -86,6 +86,6 @@ const Row = styled.div`
   }
 `;
 const Text = styled.p`
-  ${tw`mobile:text-base break-all`};
-  ${tw`desktop:text-2xl`};
+  ${tw`mobile:text-sm break-all`};
+  ${tw`desktop:text-lg`};
 `;
