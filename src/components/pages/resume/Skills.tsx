@@ -1,6 +1,6 @@
 import React from 'react';
-import tw, { styled } from 'twin.macro';
 
+import Flex from '@/components/common/Flex';
 import { Li, Ul } from '@/components/common/List';
 import Text from '@/components/common/Text';
 import Container from '@/components/pages/resume/Container';
@@ -10,7 +10,7 @@ const Skills = () => {
     <Container>
       <Text.Title>Skills</Text.Title>
 
-      <Box>
+      <Flex col gap={16}>
         <Text.SubTitle>Overall</Text.SubTitle>
         <Ul>
           <Li>서비스 런칭 경험이 있습니다.</Li>
@@ -41,9 +41,9 @@ const Skills = () => {
             크다는 평을 많이 받았습니다
           </Li>
         </Ul>
-      </Box>
+      </Flex>
 
-      <Box>
+      <Flex col gap={16}>
         <Text.SubTitle>Communication</Text.SubTitle>
         <Ul>
           <Li>
@@ -59,9 +59,9 @@ const Skills = () => {
             구체적으로 전달하며, 이해를 돕기 위해 종종 예시를 제공합니다.
           </Li>
         </Ul>
-      </Box>
+      </Flex>
 
-      <Box>
+      <Flex col gap={16}>
         <Text.SubTitle>Tech Stack</Text.SubTitle>
         <Ul>
           <Li>Next.js, React, Typescript</Li>
@@ -71,13 +71,9 @@ const Skills = () => {
           <Li>React-query, Axios, Websoket</Li>
           <Li>Jest</Li>
         </Ul>
-      </Box>
+      </Flex>
     </Container>
   );
 };
 
 export default Skills;
-
-const Box = styled.div`
-  ${tw`flex flex-col gap-4`};
-`;
