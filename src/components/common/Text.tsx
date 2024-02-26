@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import tw, { styled } from 'twin.macro';
 
@@ -139,6 +140,11 @@ Text.SubTitle = styled.h5`
 `;
 Text.P = styled.p`
   ${tw`mb-2`};
+  ${tw`mobile:text-base`};
+  ${tw`desktop:text-xl`};
+`;
+Text.Link = styled(Link)`
+  ${tw`mb-2 text-neutral-400 underline underline-offset-[6px] decoration-neutral-200`};
   ${tw`mobile:text-base`};
   ${tw`desktop:text-xl`};
 `;

@@ -25,9 +25,9 @@ const Resume = () => {
       <Divider></Divider>
       <Blog></Blog>
       <Divider></Divider>
-      <Articles></Articles>
-      <Divider></Divider>
       <Education></Education>
+      <Divider></Divider>
+      <Articles></Articles>
     </Wrapper>
   );
 };
