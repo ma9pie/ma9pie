@@ -2,9 +2,12 @@ import '@/styles/globals.css';
 
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
+import { DefaultSeo } from 'next-seo';
 import { useEffect } from 'react';
 
 import { initializeGA, trackPageView } from '@/utils';
+
+import seoConfig from '../../next-seo.config';
 
 const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
@@ -19,7 +22,12 @@ const App = ({ Component, pageProps }: AppProps) => {
     trackPageView(router.pathname);
   }, [router.pathname]);
 
-  return <Component {...pageProps}></Component>;
+  return (
+    <>
+      <DefaultSeo {...seoConfig}></DefaultSeo>
+      <Component {...pageProps}></Component>
+    </>
+  );
 };
 
 export default App;
