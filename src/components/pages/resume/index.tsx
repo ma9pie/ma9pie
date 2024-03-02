@@ -39,6 +39,6 @@ const Wrapper = styled.div`
 `;
 const Divider = styled.div`
   ${tw`w-full h-px bg-neutral-200`};
-  ${tw`mobile:my-12`};
-  ${tw`desktop:my-20`};
+  ${tw`mobile:my-8`};
+  ${tw`desktop:my-16`};
 `;

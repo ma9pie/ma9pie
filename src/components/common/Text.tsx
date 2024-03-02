@@ -128,15 +128,25 @@ const Text = ({
   );
 };
 
-Text.Title = styled.h3`
+Text.T1 = styled(Text)`
   ${tw`font-semibold`};
   ${tw`mobile:text-3xl`};
   ${tw`desktop:text-5xl`};
 `;
-Text.SubTitle = styled.h5`
+Text.T2 = styled(Text)`
   ${tw`font-semibold`};
   ${tw`mobile:text-xl`};
   ${tw`desktop:text-3xl`};
+`;
+Text.T3 = styled(Text)`
+  ${tw`font-semibold`};
+  ${tw`mobile:text-lg`};
+  ${tw`desktop:text-2xl`};
+`;
+Text.T4 = styled(Text)`
+  ${tw`font-medium`};
+  ${tw`mobile:text-base`};
+  ${tw`desktop:text-xl`};
 `;
 Text.P = styled.p`
   ${tw`mb-2`};

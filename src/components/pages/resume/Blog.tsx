@@ -2,13 +2,13 @@ import React from 'react';
 
 import Spacing from '@/components/common/Spacing';
 import Text from '@/components/common/Text';
-import Container from '@/components/pages/resume/Container';
+import Content from '@/components/pages/resume/Content';
 import { BLOG_URL } from '@/constants';
 
 const Blog = () => {
   return (
-    <Container>
-      <Text.Title>Blog</Text.Title>
+    <Content>
+      <Text.T1>Blog</Text.T1>
 
       <div>
         <Text.Link href={BLOG_URL} target="_blank">
@@ -29,7 +29,7 @@ const Blog = () => {
           실무에서의 소통 능력과 코드 스타일에 좋은 영향을 주었다고 생각합니다.
         </Text.P>
       </div>
-    </Container>
+    </Content>
   );
 };
 

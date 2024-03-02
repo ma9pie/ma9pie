@@ -1,13 +1,13 @@
 import React from 'react';
 
 import Text from '@/components/common/Text';
-import Container from '@/components/pages/resume/Container';
+import Content from '@/components/pages/resume/Content';
 import { ARTICLE_URLS } from '@/constants';
 
 const Articles = () => {
   return (
-    <Container>
-      <Text.Title>Articles</Text.Title>
+    <Content>
+      <Text.T1>Articles</Text.T1>
 
       {ARTICLE_URLS.map(({ title, url }, idx) => (
         <div key={idx}>
@@ -16,7 +16,7 @@ const Articles = () => {
           </Text.Link>
         </div>
       ))}
-    </Container>
+    </Content>
   );
 };
 

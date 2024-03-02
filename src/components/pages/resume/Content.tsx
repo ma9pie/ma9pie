@@ -5,11 +5,11 @@ interface Props {
   children: ReactNode;
 }
 
-const Container = ({ children }: Props) => {
+const Content = ({ children }: Props) => {
   return <Wrapper>{children}</Wrapper>;
 };
 
-export default Container;
+export default Content;
 
 const Wrapper = styled.div`
   ${tw`flex flex-col`};

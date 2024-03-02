@@ -82,6 +82,7 @@ export default function Document() {
         />
         <meta name="theme-color" content="#ffffff" />
 
+        {/* Font */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link

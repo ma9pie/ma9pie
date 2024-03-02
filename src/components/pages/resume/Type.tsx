@@ -2,12 +2,12 @@ import React from 'react';
 
 import { Li, Ul } from '@/components/common/List';
 import Text from '@/components/common/Text';
-import Container from '@/components/pages/resume/Container';
+import Content from '@/components/pages/resume/Content';
 
 const Type = () => {
   return (
-    <Container>
-      <Text.Title>Type</Text.Title>
+    <Content>
+      <Text.T1>Type</Text.T1>
 
       <Ul>
         <Li>글쓰기처럼 논리 정연하고 깔끔한 코드 작성을 지향합니다.</Li>
@@ -26,7 +26,7 @@ const Type = () => {
           많습니다.
         </Li>
       </Ul>
-    </Container>
+    </Content>
   );
 };
 

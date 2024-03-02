@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 import tw, { styled } from 'twin.macro';
 
-import Container from '@/components/pages/resume/Container';
+import Content from '@/components/pages/resume/Content';
 import { BLOG_URL, EMAIL, GITHUB_URL, PHONE_NUMBER } from '@/constants';
 import { InfoType } from '@/types';
 
@@ -40,7 +40,7 @@ const Info = () => {
   };
 
   return (
-    <Container>
+    <Content>
       <div>
         <Title>안녕하세요.</Title>
         <Title>Frontend Developer</Title>
@@ -56,7 +56,7 @@ const Info = () => {
           </Row>
         ))}
       </InfoBox>
-    </Container>
+    </Content>
   );
 };
 

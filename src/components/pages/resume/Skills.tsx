@@ -3,15 +3,15 @@ import React from 'react';
 import Flex from '@/components/common/Flex';
 import { Li, Ul } from '@/components/common/List';
 import Text from '@/components/common/Text';
-import Container from '@/components/pages/resume/Container';
+import Content from '@/components/pages/resume/Content';
 
 const Skills = () => {
   return (
-    <Container>
-      <Text.Title>Skills</Text.Title>
+    <Content>
+      <Text.T1>Skills</Text.T1>
 
       <Flex col gap={16}>
-        <Text.SubTitle>Overall</Text.SubTitle>
+        <Text.T2>Overall</Text.T2>
         <Ul>
           <Li>서비스 런칭 경험이 있습니다.</Li>
           <Li>Next.js 사용에 익숙합니다.</Li>
@@ -44,7 +44,7 @@ const Skills = () => {
       </Flex>
 
       <Flex col gap={16}>
-        <Text.SubTitle>Communication</Text.SubTitle>
+        <Text.T2>Communication</Text.T2>
         <Ul>
           <Li>
             할당된 업무만 하는 것이 아닌 필요한 기능이나 디자인에 관련하여
@@ -62,7 +62,7 @@ const Skills = () => {
       </Flex>
 
       <Flex col gap={16}>
-        <Text.SubTitle>Tech Stack</Text.SubTitle>
+        <Text.T2>Tech Stack</Text.T2>
         <Ul>
           <Li>Next.js, React, Typescript</Li>
           <Li>HTML, CSS, Javacript</Li>
@@ -72,7 +72,7 @@ const Skills = () => {
           <Li>Jest</Li>
         </Ul>
       </Flex>
-    </Container>
+    </Content>
   );
 };
 

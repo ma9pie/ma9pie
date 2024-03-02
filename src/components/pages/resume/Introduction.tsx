@@ -1,12 +1,12 @@
 import React from 'react';
-import tw, { styled } from 'twin.macro';
 
 import Text from '@/components/common/Text';
+import Content from '@/components/pages/resume/Content';
 
 const Introduction = () => {
   return (
-    <Wrapper>
-      <Text.Title>Introduction</Text.Title>
+    <Content>
+      <Text.T1>Introduction</Text.T1>
 
       <div>
         <Text.P>
@@ -29,14 +29,8 @@ const Introduction = () => {
           두고 있습니다.
         </Text.P>
       </div>
-    </Wrapper>
+    </Content>
   );
 };
 
 export default Introduction;
-
-const Wrapper = styled.div`
-  ${tw`flex flex-col`};
-  ${tw`mobile:gap-4`};
-  ${tw`desktop:gap-8`};
-`;
