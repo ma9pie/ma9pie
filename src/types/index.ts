@@ -1,1 +1,4 @@
-export * from './test';
+export * from './info';
+export * from './techStack';
+export * from './position';
+export * from './experience';

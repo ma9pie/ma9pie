@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import tw, { styled } from 'twin.macro';
 
@@ -126,6 +127,37 @@ const Text = ({
     </P>
   );
 };
+
+Text.T1 = styled(Text)`
+  ${tw`font-semibold`};
+  ${tw`mobile:text-3xl`};
+  ${tw`desktop:text-5xl`};
+`;
+Text.T2 = styled(Text)`
+  ${tw`font-semibold`};
+  ${tw`mobile:text-xl`};
+  ${tw`desktop:text-3xl`};
+`;
+Text.T3 = styled(Text)`
+  ${tw`font-semibold`};
+  ${tw`mobile:text-lg`};
+  ${tw`desktop:text-2xl`};
+`;
+Text.T4 = styled(Text)`
+  ${tw`font-medium`};
+  ${tw`mobile:text-base`};
+  ${tw`desktop:text-xl`};
+`;
+Text.P = styled.p`
+  ${tw`mb-2`};
+  ${tw`mobile:text-base`};
+  ${tw`desktop:text-xl`};
+`;
+Text.Link = styled(Link)`
+  ${tw`mb-2 text-neutral-400 underline underline-offset-[6px] decoration-neutral-200`};
+  ${tw`mobile:text-base`};
+  ${tw`desktop:text-xl`};
+`;
 
 export default Text;
 

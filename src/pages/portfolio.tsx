@@ -1,15 +1,15 @@
 import React from 'react';
 
 import Head from '@/components/layouts/Head';
-import Layout from '@/components/layouts/Layout';
-import Portfolio from '@/components/pages/Portfolio';
+import PageLayout from '@/components/layouts/PageLayout';
+import Portfolio from '@/components/pages/portfolio';
 
 const PortfolioPage = () => {
   return (
-    <Layout>
+    <PageLayout>
       <Head title="Portfolio"></Head>
       <Portfolio></Portfolio>
-    </Layout>
+    </PageLayout>
   );
 };
 

@@ -1,15 +1,15 @@
 import React from 'react';
 
 import Head from '@/components/layouts/Head';
-import Layout from '@/components/layouts/Layout';
-import Resume from '@/components/pages/Resume';
+import PageLayout from '@/components/layouts/PageLayout';
+import Resume from '@/components/pages/resume';
 
 const ResumePage = () => {
   return (
-    <Layout>
+    <PageLayout>
       <Head title="Resume"></Head>
       <Resume></Resume>
-    </Layout>
+    </PageLayout>
   );
 };
 
