@@ -63,10 +63,10 @@ const Experiences = () => {
                         >
                           {link.url}
                         </LinkText>
-                        {!link.active && <Text sm>(서비스 종료)</Text>}
+                        {!link.active && <Text>(서비스 종료)</Text>}
                       </Flex>
                     )}
-                    <Text sm>{`Period : ${formatPeriod(projectPeriod)}`}</Text>
+                    <Text>{`Period : ${formatPeriod(projectPeriod)}`}</Text>
                     <Text>{description}</Text>
                   </Flex>
 
@@ -74,16 +74,14 @@ const Experiences = () => {
                     <Text.T4>Tasks</Text.T4>
                     <Ul>
                       {tasks.map((task) => (
-                        <Li key={task} className="!text-sm">
-                          {task}
-                        </Li>
+                        <Li key={task}>{task}</Li>
                       ))}
                     </Ul>
                   </Flex>
 
                   <Flex col gap={8}>
                     <Text.T4>Tech Stacks</Text.T4>
-                    <Text sm>{techStacks.join(', ')}</Text>
+                    <Text>{techStacks.join(', ')}</Text>
                   </Flex>
                 </ProjectContainer>
               )
@@ -98,7 +96,7 @@ const Experiences = () => {
 export default Experiences;
 
 const SectionContainer = styled.div`
-  ${tw`flex gap-8`};
+  ${tw`flex gap-6`};
   ${tw`mobile:flex-col`};
   ${tw`desktop:flex-row`};
 `;
@@ -106,9 +104,9 @@ const ProjectContainer = styled.div`
   ${tw`flex flex-col gap-3`};
 `;
 const LinkText = styled.a<{ active: boolean }>`
-  ${tw`text-sm underline underline-offset-[6px]`};
+  ${tw`underline underline-offset-[6px]`};
   ${({ active }) =>
     active
-      ? tw`text-neutral-400 decoration-neutral-200`
+      ? tw`text-neutral-400 decoration-neutral-300`
       : tw`text-neutral-900 decoration-neutral-900 line-through pointer-events-none`};
 `;

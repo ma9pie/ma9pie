@@ -151,12 +151,12 @@ Text.T4 = styled(Text)`
 Text.P = styled.p`
   ${tw`mb-2`};
   ${tw`mobile:text-base`};
-  ${tw`desktop:text-xl`};
+  ${tw`desktop:text-lg`};
 `;
 Text.Link = styled(Link)`
   ${tw`mb-2 text-neutral-400 underline underline-offset-[6px] decoration-neutral-200`};
   ${tw`mobile:text-base`};
-  ${tw`desktop:text-xl`};
+  ${tw`desktop:text-lg`};
 `;
 
 export default Text;
