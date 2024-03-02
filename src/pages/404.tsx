@@ -2,17 +2,17 @@ import React from 'react';
 import tw, { styled } from 'twin.macro';
 
 import Head from '@/components/layouts/Head';
-import Layout from '@/components/layouts/Layout';
+import PageLayout from '@/components/layouts/PageLayout';
 
 const NotFound = () => {
   return (
-    <Layout>
+    <PageLayout>
       <Head title="Page Not found"></Head>
       <Container>
         <Text>404</Text>
         <SubText>Not Found</SubText>
       </Container>
-    </Layout>
+    </PageLayout>
   );
 };
 
