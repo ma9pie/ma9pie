@@ -4,6 +4,26 @@ import Flex from '@/components/common/Flex';
 import { Li, Ul } from '@/components/common/List';
 import Text from '@/components/common/Text';
 import Content from '@/components/pages/resume/Content';
+import { TechStack } from '@/types';
+
+const TECH_STACKS = [
+  TechStack.NextJs,
+  TechStack.React,
+  TechStack.TypeScript,
+
+  TechStack.Redux,
+  TechStack.Recoil,
+  TechStack.Jotai,
+
+  TechStack.Emotion,
+  TechStack.TailwindCSS,
+
+  TechStack.Axios,
+  TechStack.ReactQuery,
+  TechStack.WebSoket,
+
+  TechStack.Jest,
+];
 
 const Skills = () => {
   return (
@@ -63,14 +83,7 @@ const Skills = () => {
 
       <Flex col gap={16}>
         <Text.T2>Tech Stack</Text.T2>
-        <Ul>
-          <Li>Next.js, React, Typescript</Li>
-          <Li>HTML, CSS, Javacript</Li>
-          <Li>Redux, Recoil, Jotai</Li>
-          <Li>Styled component, Emotion, Tailwind CSS, Sass</Li>
-          <Li>React-query, Axios, Websoket</Li>
-          <Li>Jest</Li>
-        </Ul>
+        <Text.P>{TECH_STACKS.join(', ')}</Text.P>
       </Flex>
     </Content>
   );
