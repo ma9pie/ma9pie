@@ -7,7 +7,7 @@ export const Ul = styled.ul`
   }
 `;
 export const Li = styled.li`
-  ${tw`ml-5 mb-2`};
+  ${tw`ml-7 mb-1`};
   ${tw`mobile:text-base`};
-  ${tw`desktop:text-xl`};
+  ${tw`desktop:text-lg`};
 `;

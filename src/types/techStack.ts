@@ -23,9 +23,9 @@ export enum TechStack {
   Sass = 'Sass',
 
   // API Libraries
-  ReactQuery = 'React-query',
   Axios = 'Axios',
-  Websoket = 'Websoket',
+  ReactQuery = 'React-query',
+  WebSoket = 'WebSoket',
 
   // Testing Libraries
   Jest = 'Jest',
