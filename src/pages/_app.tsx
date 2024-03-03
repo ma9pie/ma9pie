@@ -11,6 +11,7 @@ import { initializeGA, trackPageView } from '@/utils';
 import seoConfig from '../../next-seo.config';
 
 const queryClient = new QueryClient();
+const isProduction = process.env.NEXT_PUBLIC_MODE === 'production';
 
 const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
@@ -24,6 +25,13 @@ const App = ({ Component, pageProps }: AppProps) => {
   useEffect(() => {
     trackPageView(router.pathname);
   }, [router.pathname]);
+
+  // Production 콘솔 제거
+  useEffect(() => {
+    if (isProduction) {
+      console.log = () => {};
+    }
+  }, []);
 
   return (
     <>
