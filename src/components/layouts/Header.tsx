@@ -39,6 +39,6 @@ const Menu = styled.div<{ active: boolean }>`
   ${tw`font-bold p-4 transition-colors duration-200`};
   ${(props) =>
     props.active
-      ? tw`text-neutral-900`
-      : tw`text-neutral-300 hover:text-neutral-500`};
+      ? tw`text-black`
+      : tw`text-neutral-400 hover:text-neutral-600`};
 `;

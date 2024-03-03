@@ -1,12 +1,13 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, RefObject } from 'react';
 import tw, { styled } from 'twin.macro';
 
 interface Props {
+  ref?: RefObject<any>;
   children: ReactNode;
 }
 
-const PDFLayout = ({ children }: Props) => {
-  return <Wrapper>{children}</Wrapper>;
+const PDFLayout = ({ ref, children }: Props) => {
+  return <Wrapper ref={ref}>{children}</Wrapper>;
 };
 
 export default PDFLayout;
