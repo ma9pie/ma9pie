@@ -1,12 +1,13 @@
-import React, { useRef } from 'react';
+import React, { ReactNode, useRef } from 'react';
 import { IoPrintSharp } from 'react-icons/io5';
 import ReactToPrint from 'react-to-print';
 import tw, { styled } from 'twin.macro';
 
-import PDFLayout from '@/components/layouts/PDFLayout';
-import Resume from '@/components/pages/resume';
+interface Props {
+  printNode?: ReactNode;
+}
 
-const PrintButton = () => {
+const PrintButton = ({ printNode }: Props) => {
   const resumeRef = useRef<HTMLDivElement>(null);
 
   return (
@@ -17,11 +18,7 @@ const PrintButton = () => {
       ></ReactToPrint>
 
       <ContentWrapper>
-        <div ref={resumeRef}>
-          <PDFLayout>
-            <Resume></Resume>
-          </PDFLayout>
-        </div>
+        <div ref={resumeRef}>{printNode}</div>
       </ContentWrapper>
     </Wrapper>
   );

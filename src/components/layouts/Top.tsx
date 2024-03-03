@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import tw, { styled } from 'twin.macro';
 
 import PrintButton from '@/components/common/buttons/PrintButton';
 import Text from '@/components/common/Text';
 import useCommit from '@/hooks/useCommit';
 
-const Top = () => {
+interface Props {
+  printNode?: ReactNode;
+}
+
+const Top = ({ printNode }: Props) => {
   const { lasCommitTime } = useCommit();
 
   return (
@@ -13,7 +17,7 @@ const Top = () => {
       <Text sm neutral500>
         {lasCommitTime || '-'}
       </Text>
-      <PrintButton></PrintButton>
+      {printNode && <PrintButton printNode={printNode}></PrintButton>}
     </Wrapper>
   );
 };
