@@ -30,7 +30,7 @@ const PrintButton = () => {
 export default PrintButton;
 
 const Wrapper = styled.div`
-  ${tw`relative`};
+  ${tw``};
 `;
 const ContentWrapper = styled.div`
   ${tw`hidden`};
