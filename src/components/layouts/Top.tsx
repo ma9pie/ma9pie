@@ -15,7 +15,7 @@ const Top = ({ printNode }: Props) => {
   return (
     <Wrapper>
       <Text sm neutral500>
-        {lasCommitTime || '-'}
+        {`updated at ${lasCommitTime || '-'}`}
       </Text>
       {printNode && <PrintButton printNode={printNode}></PrintButton>}
     </Wrapper>
