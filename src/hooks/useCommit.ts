@@ -14,8 +14,8 @@ const useCommit = () => {
         `https://api.github.com/repos/${owner}/${repo}/branches/${branch}`
       );
       const lastCommitTime = res.commit.commit.committer.date;
-      const formattedTime = lastCommitTime.replace('T', ' ').replace('Z', '');
-      return formattedTime;
+      const date = new Date(lastCommitTime).toLocaleDateString();
+      return date;
     } catch (err) {
       console.log(err);
     }
