@@ -14,13 +14,13 @@ const Footer = () => {
         Ⓒ ma9pie. All Rights Reserved.
       </Text>
       <Flex gap={8}>
-        <IconWrapper href={GITHUB_URL} target="_blank">
+        <IconWrapper title="github" href={GITHUB_URL} target="_blank">
           <SiGithub size={16}></SiGithub>
         </IconWrapper>
-        <IconWrapper href={LINKEDIN_URL} target="_blank">
+        <IconWrapper title="linked in" href={LINKEDIN_URL} target="_blank">
           <SiLinkedin size={16}></SiLinkedin>
         </IconWrapper>
-        <IconWrapper href={BLOG_URL} target="_blank">
+        <IconWrapper title="tistory blog" href={BLOG_URL} target="_blank">
           <SiTistory size={12}></SiTistory>
         </IconWrapper>
       </Flex>
