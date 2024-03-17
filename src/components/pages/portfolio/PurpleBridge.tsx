@@ -24,7 +24,7 @@ const PurpleBridge = () => {
       ></Img>
       <Img
         src="/images/screenshots/purplebridge/dashboard.png"
-        width="50%"
+        width="100%"
       ></Img>
     </Wrapper>
   );
