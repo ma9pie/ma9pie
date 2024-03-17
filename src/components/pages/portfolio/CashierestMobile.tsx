@@ -1,6 +1,7 @@
 import React from 'react';
 import tw, { styled } from 'twin.macro';
 
+import Img from '@/components/common/Img';
 import Info from '@/components/pages/portfolio/Info';
 import { PORTFOLIO_PROJECTS } from '@/constants';
 import { Project } from '@/types';
