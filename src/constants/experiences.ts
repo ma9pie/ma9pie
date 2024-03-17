@@ -70,7 +70,11 @@ export const EXPERIENCES: Experience[] = [
       {
         title: 'Tealswap v3',
         projectPeriod: ['2023.12', '2024.03'],
-        link: null,
+        link: {
+          url: 'https://app.tealswap.com/en/',
+          active: true,
+        },
+
         description: 'Uniswap v3 기능 개발 FE 작업 지원',
         tasks: [
           'Uniswap V3 liquidity chart 구현',
@@ -99,7 +103,7 @@ export const EXPERIENCES: Experience[] = [
           url: 'https://mitosis.finance',
           active: false,
         },
-        description: 'Uniswap v3 기능 개발 FE 작업 지원',
+        description: 'TradingView chart 개발 지원',
         tasks: [
           'Tradingview chart Datafeed 구축',
           'Tradingview chart customize option 추가',

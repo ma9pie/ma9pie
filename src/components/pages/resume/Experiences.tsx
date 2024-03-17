@@ -8,15 +8,6 @@ import Content from '@/components/pages/resume/Content';
 import { EXPERIENCES } from '@/constants';
 import { formatPeriod } from '@/utils';
 
-interface Project {
-  title: any;
-  period: any;
-  url: any;
-  description: any;
-  tasks: any;
-  techStacks: any;
-}
-
 export interface Experience {
   company: any;
   position: any;
@@ -56,6 +47,7 @@ const Experiences = () => {
                   <Flex col gap={4}>
                     {link && (
                       <Flex gap={4}>
+                        <Text>url :</Text>
                         <LinkText
                           href={link.url}
                           active={link.active}
