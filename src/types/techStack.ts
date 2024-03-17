@@ -30,6 +30,21 @@ export enum TechStack {
   // Testing Libraries
   Jest = 'Jest',
 
+  // Backend Frameworks
+  SpringBoot = 'Spring Boot',
+
+  // Backend Libraries
+  Java = 'Java',
+  NodeJS = 'Node.js',
+
+  // DB
+  Firebase = 'Firebase',
+  MongoDB = 'MongoDB',
+  MySQL = 'MySQL',
+
+  // Infra
+  AWS = 'AWS',
+
   // ETC
   NextI18next = 'Next-i18next',
   Ethers = 'Ethers',

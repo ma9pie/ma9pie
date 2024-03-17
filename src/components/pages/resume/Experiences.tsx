@@ -6,14 +6,7 @@ import { Li, Ul } from '@/components/common/List';
 import Text from '@/components/common/Text';
 import Content from '@/components/pages/resume/Content';
 import { EXPERIENCES } from '@/constants';
-import { formatPeriod } from '@/utils';
-
-export interface Experience {
-  company: any;
-  position: any;
-  period: any;
-  projects: any;
-}
+import { formatProjectPeriod, formatWorkingPeriod } from '@/utils';
 
 const Experiences = () => {
   return (
@@ -27,7 +20,7 @@ const Experiences = () => {
 
             <div>
               <Text>{position}</Text>
-              <Text>{formatPeriod(workingPeriod)}</Text>
+              <Text>{formatWorkingPeriod(workingPeriod)}</Text>
             </div>
           </Flex>
 
@@ -36,7 +29,7 @@ const Experiences = () => {
               ({
                 title,
                 projectPeriod,
-                link,
+                service,
                 description,
                 tasks,
                 techStacks,
@@ -45,20 +38,22 @@ const Experiences = () => {
                   <Text.T3>{title}</Text.T3>
 
                   <Flex col gap={4}>
-                    {link && (
+                    {service && (
                       <Flex gap={4}>
-                        <Text>url :</Text>
-                        <LinkText
-                          href={link.url}
-                          active={link.active}
+                        <Text>URL :</Text>
+                        <Text.Link
+                          href={service.url}
+                          lineThrough={!service.active}
                           target="_blank"
                         >
-                          {link.url}
-                        </LinkText>
-                        {!link.active && <Text>(서비스 종료)</Text>}
+                          {service.url}
+                        </Text.Link>
+                        {!service.active && <Text>(서비스 종료)</Text>}
                       </Flex>
                     )}
-                    <Text>{`Period : ${formatPeriod(projectPeriod)}`}</Text>
+                    <Text>{`Period : ${formatProjectPeriod(
+                      projectPeriod
+                    )}`}</Text>
                     <Text>{description}</Text>
                   </Flex>
 
@@ -94,11 +89,4 @@ const SectionContainer = styled.div`
 `;
 const ProjectContainer = styled.div`
   ${tw`flex flex-col gap-3`};
-`;
-const LinkText = styled.a<{ active: boolean }>`
-  ${tw`underline underline-offset-[6px]`};
-  ${({ active }) =>
-    active
-      ? tw`text-neutral-400 decoration-neutral-300`
-      : tw`text-neutral-900 decoration-neutral-900 line-through pointer-events-none`};
 `;
