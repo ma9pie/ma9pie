@@ -31,9 +31,9 @@ const Footer = () => {
 export default Footer;
 
 const Wrapper = styled.div`
-  ${tw`flex justify-between items-center w-full h-24 bg-neutral-50 border-t border-solid border-neutral-200`};
-  ${tw`mobile:px-4`};
-  ${tw`desktop:px-6`};
+  ${tw`flex justify-between w-full h-24 bg-neutral-50 border-t border-solid border-neutral-200`};
+  ${tw`mobile:p-4`};
+  ${tw`desktop:p-6`};
 `;
 const IconWrapper = styled(Link)`
   ${tw`flex justify-center items-center w-6 h-6`};
