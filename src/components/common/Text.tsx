@@ -147,7 +147,7 @@ Text.T4 = styled(Text)`
   ${tw`mobile:text-base`};
   ${tw`desktop:text-xl`};
 `;
-Text.P = styled.p`
+Text.P = styled(Text)`
   ${tw`mb-2`};
   ${tw`mobile:text-base`};
   ${tw`desktop:text-lg`};
