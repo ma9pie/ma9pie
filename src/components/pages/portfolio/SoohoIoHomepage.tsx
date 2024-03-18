@@ -24,8 +24,6 @@ const SoohoIoHomepage = () => {
 
       <Text.P>수호아이오 홈페이지 리뉴얼 작업을 하였습니다.</Text.P>
 
-      <Spacing height={24}></Spacing>
-
       <Ul>
         <Li>모바일 반응형 작업</Li>
         <Li>다국어 지원</Li>
@@ -38,7 +36,3 @@ const SoohoIoHomepage = () => {
 };
 
 export default SoohoIoHomepage;
-
-const ImageWrapper = styled.div`
-  ${tw`flex-1`};
-`;

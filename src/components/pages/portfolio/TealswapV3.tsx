@@ -40,8 +40,6 @@ const TealswapV3 = () => {
         담당하였습니다.
       </Text.P>
 
-      <Spacing height={24}></Spacing>
-
       <Ul>
         <Li>Uniswap V3 liquidity chart 구현</Li>
         <Li>Pool 생성 기능 개발</Li>

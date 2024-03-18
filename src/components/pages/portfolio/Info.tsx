@@ -24,7 +24,7 @@ const Info = ({
       <Text.T2>{title}</Text.T2>
       {service && (
         <Flex gap={4}>
-          <Text>URL :</Text>
+          <Text medium>URL :</Text>
           <Text.Link
             href={service.url}
             lineThrough={!service.active}
