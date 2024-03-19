@@ -6,7 +6,7 @@ import Text from '@/components/common/Text';
 import { PortfolioProject } from '@/types';
 import { formatProjectPeriod } from '@/utils';
 
-const Info = ({
+const ProjectInfo = ({
   company,
   projectType,
   title,
@@ -55,4 +55,4 @@ const Info = ({
   );
 };
 
-export default Info;
+export default ProjectInfo;
