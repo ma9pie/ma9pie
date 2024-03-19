@@ -1,7 +1,6 @@
 import React from 'react';
 import tw, { styled } from 'twin.macro';
 
-import Flex from '@/components/common/Flex';
 import Grid from '@/components/common/Grid';
 import Img from '@/components/common/Img';
 import { Li, Ul } from '@/components/common/List';
@@ -42,6 +41,22 @@ const PurpleBridge = () => {
         src="/images/screenshots/purplebridge/dashboard.png"
         width="75%"
       ></Img>
+
+      <Spacing height={24}></Spacing>
+
+      <Text.P>
+        Purple Bridge는 Bora & Polygon 블록체인 Bridge 및 dex 서비스입니다.
+      </Text.P>
+      <Text.P>
+        Input edge case 처리, Slider API 호출 부분 trottling 처리, 반응형 디자인
+        적용, Dashboard page, History modal 개발을 하였습니다.
+      </Text.P>
+      <Ul>
+        <Li>Purple Bridge DApp 서비스 런칭</Li>
+        <Li>모바일 반응형 작업</Li>
+        <Li>Face wallet 지갑 연동</Li>
+        <Li>대시보드 페이지 개발</Li>
+      </Ul>
     </>
   );
 };
