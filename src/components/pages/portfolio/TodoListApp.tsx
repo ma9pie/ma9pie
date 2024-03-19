@@ -47,13 +47,20 @@ const TodoListApp = () => {
         좀 더 직관적이고 심플한 디자인을 가지고 있는 나만의 Todo List App이
         필요하다고 생각하여 개발하게 된 서비스입니다.
       </Text.P>
+
+      <Text.P semibold>[FE]</Text.P>
       <Ul>
-        <Li>User & Todo backend 개발</Li>
-        <Li>Todo 생성 및 하위 task 생성 기능 제공</Li>
+        <Li>Todo 생성 및 하위 task 생성 기능 개발</Li>
         <Li>라이트, 다크 모드 구현</Li>
         <Li>로그인 및 회원가입 기능 구현</Li>
         <Li>소셜 로그인 개발</Li>
         <Li>Sentry 에러 분석 및 bug fix</Li>
+      </Ul>
+
+      <Text.P semibold>[BE]</Text.P>
+      <Ul>
+        <Li>User API 개발</Li>
+        <Li>Todo API 개발</Li>
       </Ul>
 
       <Spacing height={24}></Spacing>
