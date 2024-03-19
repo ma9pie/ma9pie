@@ -19,7 +19,7 @@ const TodoListApp = () => {
 
       <Spacing height={24}></Spacing>
 
-      <Flex justify="center" gap={16}>
+      <Flex gap={16}>
         <Flex flex={1}>
           <Img
             src="/images/screenshots/todo-list-app/iphone-login.png"
