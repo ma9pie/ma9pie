@@ -14,13 +14,13 @@ const Footer = () => {
         Ⓒ ma9pie. All Rights Reserved.
       </Text>
       <Flex gap={8}>
-        <IconWrapper href={GITHUB_URL} target="_blank">
+        <IconWrapper title="github" href={GITHUB_URL} target="_blank">
           <SiGithub size={16}></SiGithub>
         </IconWrapper>
-        <IconWrapper href={LINKEDIN_URL} target="_blank">
+        <IconWrapper title="linked in" href={LINKEDIN_URL} target="_blank">
           <SiLinkedin size={16}></SiLinkedin>
         </IconWrapper>
-        <IconWrapper href={BLOG_URL} target="_blank">
+        <IconWrapper title="tistory blog" href={BLOG_URL} target="_blank">
           <SiTistory size={12}></SiTistory>
         </IconWrapper>
       </Flex>
@@ -31,9 +31,9 @@ const Footer = () => {
 export default Footer;
 
 const Wrapper = styled.div`
-  ${tw`fixed bottom-0 flex justify-between items-center w-full h-8 bg-neutral-50 border-t border-solid border-neutral-200`};
-  ${tw`mobile:px-4`};
-  ${tw`desktop:px-6`};
+  ${tw`flex justify-between w-full h-24 bg-neutral-50 border-t border-solid border-neutral-200`};
+  ${tw`mobile:p-4`};
+  ${tw`desktop:p-6`};
 `;
 const IconWrapper = styled(Link)`
   ${tw`flex justify-center items-center w-6 h-6`};

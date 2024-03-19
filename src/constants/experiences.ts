@@ -1,76 +1,39 @@
-import { Experience, Position, TechStack } from '@/types';
+import { PROJECT_PERIOD, PROJECT_TECH_STACK, SERVICE_URLS } from '@/constants';
+import { Company, Experience, Position, Project, WorkProject } from '@/types';
 
-const TEMPLATE = {
-  company: 'company',
-  position: Position.Frontend,
-  workingPeriod: ['period', 'period'],
-  projects: [
-    {
-      title: 'title',
-      period: ['period', 'period'],
-      link: {
-        url: 'null',
-        active: true,
-      },
-      description: 'description',
-      tasks: [
-        'null',
-        'null',
-        'null',
-        'null',
-        'null',
-        'null',
-        'null',
-        'null',
-        'null',
-      ],
-      techStacks: [
-        TechStack.React,
-        TechStack.React,
-        TechStack.React,
-        TechStack.React,
-      ],
+const createProject = ({
+  project,
+  active,
+  description,
+  tasks,
+}: {
+  project: Project;
+  active: boolean;
+  description: string;
+  tasks: string[];
+}): WorkProject => {
+  return {
+    title: project,
+    projectPeriod: PROJECT_PERIOD[project],
+    service: {
+      url: SERVICE_URLS[project],
+      active,
     },
-  ],
+    description,
+    tasks,
+    techStacks: PROJECT_TECH_STACK[project],
+  };
 };
 
 export const EXPERIENCES: Experience[] = [
   {
-    company: 'SOOHO.IO',
+    company: Company.SoohoIo,
     position: Position.Frontend,
     workingPeriod: ['2023.03', null],
     projects: [
-      {
-        title: 'Renewal Homepage',
-        projectPeriod: ['2024.02', '2024.02'],
-        link: {
-          url: 'https://sooho.io',
-          active: true,
-        },
-        description: '수호아이오 홈페이지 리뉴얼 작업',
-        tasks: [
-          'FE 개발 파트 전체 담당',
-          '홈페이지 개발',
-          '모바일 반응형 작업',
-          '언어 변경 기능 추가',
-          'GA4 연동',
-          'SEO 최적화',
-          '블로그 API 연동',
-        ],
-        techStacks: [
-          TechStack.NextJs,
-          TechStack.React,
-          TechStack.TypeScript,
-          TechStack.Jotai,
-          TechStack.Emotion,
-          TechStack.TailwindCSS,
-          TechStack.NextI18next,
-        ],
-      },
-      {
-        title: 'Tealswap v3',
-        projectPeriod: ['2023.12', '2024.03'],
-        link: null,
+      createProject({
+        project: Project.TealswapV3,
+        active: true,
         description: 'Uniswap v3 기능 개발 FE 작업 지원',
         tasks: [
           'Uniswap V3 liquidity chart 구현',
@@ -81,38 +44,33 @@ export const EXPERIENCES: Experience[] = [
           'Big.js를 통한 숫자 정밀 계산 유틸 개발',
           'Modal system 구축',
         ],
-        techStacks: [
-          TechStack.NextJs,
-          TechStack.React,
-          TechStack.TypeScript,
-          TechStack.Jotai,
-          TechStack.Emotion,
-          TechStack.TailwindCSS,
-          TechStack.Wagmi,
-          TechStack.Viem,
+      }),
+      createProject({
+        project: Project.SoohoIoHomepage,
+        active: true,
+        description: '수호아이오 홈페이지 리뉴얼 작업',
+        tasks: [
+          'FE 개발 파트 전체 담당',
+          '홈페이지 개발',
+          '모바일 반응형 작업',
+          '언어 변경 기능 추가',
+          'GA4 연동',
+          'SEO 최적화',
+          '블로그 API 연동',
         ],
-      },
-      {
-        title: 'Mitosis Beta',
-        projectPeriod: ['2023.11', '2023.11'],
-        link: {
-          url: 'https://mitosis.finance',
-          active: false,
-        },
-        description: 'Uniswap v3 기능 개발 FE 작업 지원',
+      }),
+      createProject({
+        project: Project.Mitosis,
+        active: false,
+        description: 'TradingView chart 개발 지원',
         tasks: [
           'Tradingview chart Datafeed 구축',
           'Tradingview chart customize option 추가',
         ],
-        techStacks: [TechStack.NextJs, TechStack.React, TechStack.TypeScript],
-      },
-      {
-        title: 'VivaLeva',
-        projectPeriod: ['2023.07', '2023.12'],
-        link: {
-          url: 'https://vivaleva.com',
-          active: true,
-        },
+      }),
+      createProject({
+        project: Project.VivaLeva,
+        active: true,
         description:
           'zkSync Era protocol 기반의 Lending, Staking, Leverage yield farming 서비스 개발',
         tasks: [
@@ -126,24 +84,10 @@ export const EXPERIENCES: Experience[] = [
           'GA4 도입 및 사용자 행동 분석 통한 UX 증대 경험',
           'Sentry 도입 및 오류 로깅 분석을 통한 bug fix',
         ],
-        techStacks: [
-          TechStack.NextJs,
-          TechStack.React,
-          TechStack.TypeScript,
-          TechStack.Recoil,
-          TechStack.Emotion,
-          TechStack.TailwindCSS,
-          TechStack.ReactQuery,
-          TechStack.Ethers,
-        ],
-      },
-      {
-        title: 'Purple Bridge',
-        projectPeriod: ['2023.03', '2023.06'],
-        link: {
-          url: 'https://purplebridge.link',
-          active: true,
-        },
+      }),
+      createProject({
+        project: Project.PurpleBridge,
+        active: true,
         description: 'Bora chian과 Polygon chain간의 bridging service',
         tasks: [
           'FE 개발 파트 전체 담당',
@@ -154,29 +98,17 @@ export const EXPERIENCES: Experience[] = [
           '대시보드 페이지 개발',
           '모바일 반응형 작업',
         ],
-        techStacks: [
-          TechStack.NextJs,
-          TechStack.React,
-          TechStack.TypeScript,
-          TechStack.TailwindCSS,
-          TechStack.ReactQuery,
-          TechStack.Ethers,
-        ],
-      },
+      }),
     ],
   },
   {
-    company: 'Newlink Cashierest',
+    company: Company.Newlink,
     position: Position.Frontend,
     workingPeriod: ['2022.03', '2023.03'],
     projects: [
-      {
-        title: 'Cashierest Web',
-        projectPeriod: ['2022.03', '2022.11'],
-        link: {
-          url: 'https://www.cashierest.com',
-          active: false,
-        },
+      createProject({
+        project: Project.CashierestWeb,
+        active: false,
         description:
           '새로운 캐셔레스트 2.0 서비스 open을 위한 첫 FE 멤버로 합류를 하였고, FE 개발 파트의 전반적인 부분을 담당하였습니다.',
         tasks: [
@@ -191,22 +123,10 @@ export const EXPERIENCES: Experience[] = [
           'Tradingview chart library를 통한 거래소 차트 구현 및 customizing',
           'Influx DB query문 수정을 통한 chart history API 응답 시간 8~10배 단축 (700ms -> 70ms)',
         ],
-        techStacks: [
-          TechStack.NextJs,
-          TechStack.React,
-          TechStack.JavaScript,
-          TechStack.Emotion,
-          TechStack.Redux,
-          TechStack.ReactQuery,
-        ],
-      },
-      {
-        title: 'Cashierest Mobile Web',
-        projectPeriod: ['2022.11', '2023.03'],
-        link: {
-          url: 'https://m.cashierest.com',
-          active: false,
-        },
+      }),
+      createProject({
+        project: Project.CashierestMobile,
+        active: false,
         description: '캐셔레스트 2.0 모바일 웹 서비스 개발',
         tasks: [
           '프로젝트 아키텍처 설계',
@@ -214,14 +134,7 @@ export const EXPERIENCES: Experience[] = [
           '모바일 앱용 차트 Web view 개발',
           'PWA 설정',
         ],
-        techStacks: [
-          TechStack.NextJs,
-          TechStack.React,
-          TechStack.JavaScript,
-          TechStack.Emotion,
-          TechStack.Redux,
-        ],
-      },
+      }),
     ],
   },
 ];

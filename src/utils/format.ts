@@ -7,9 +7,16 @@ export const formatDate = (str: string) => {
     .padStart(2, '0')}`;
 };
 
-export const formatPeriod = (period: Period) => {
+export const formatWorkingPeriod = (period: Period) => {
   const [from, to] = period;
   const startDate = formatDate(from);
-  const endDate = to ? formatDate(to) : '현재';
+  const endDate = to ? formatDate(to) : '재직중';
+  return `${startDate} ~ ${endDate}`;
+};
+
+export const formatProjectPeriod = (period: Period) => {
+  const [from, to] = period;
+  const startDate = formatDate(from);
+  const endDate = to ? formatDate(to) : '상시 업데이트';
   return `${startDate} ~ ${endDate}`;
 };

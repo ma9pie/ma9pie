@@ -2,6 +2,7 @@
   "short_name": "ma9pie",
   "name": "ma9pie",
   "start_url": ".",
+  "display": "standalone",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "icons": [
@@ -40,6 +41,17 @@
       "sizes": "192x192",
       "type": "image/png",
       "density": "4.0"
+    },
+    {
+      "src": "images/profile-image.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/icon",
+      "purpose": "any maskable"
     }
   ]
 }
