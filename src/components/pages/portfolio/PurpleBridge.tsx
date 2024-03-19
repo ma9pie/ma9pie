@@ -17,6 +17,7 @@ const IMAGE_URL_LIST = [
   '/images/screenshots/purplebridge/swap.png',
   '/images/screenshots/purplebridge/add-liquidity.png',
   '/images/screenshots/purplebridge/remove-liquidity.png',
+  '/images/screenshots/purplebridge/dashboard.png',
 ];
 
 const PurpleBridge = () => {
@@ -33,13 +34,6 @@ const PurpleBridge = () => {
           </div>
         ))}
       </Grid>
-
-      <Spacing height={16}></Spacing>
-
-      <Img
-        src="/images/screenshots/purplebridge/dashboard.png"
-        width="75%"
-      ></Img>
 
       <Spacing height={24}></Spacing>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import tw, { styled } from 'twin.macro';
 
 import Grid from '@/components/common/Grid';
 import Img from '@/components/common/Img';
@@ -31,11 +32,11 @@ const Polypoli = () => {
 
       <Spacing height={24}></Spacing>
 
-      <Grid col={4} gap={16}>
+      <Grid col={5} gap={16}>
         {IMAGE_URL_LIST_0.map((url, idx) => (
-          <div key={idx}>
+          <ImageWrapper key={idx}>
             <Img src={url}></Img>
-          </div>
+          </ImageWrapper>
         ))}
       </Grid>
 
@@ -65,22 +66,27 @@ const Polypoli = () => {
 
       <Spacing height={24}></Spacing>
 
-      <Grid col={4} gap={16}>
+      <Grid col={5} gap={16}>
         {IMAGE_URL_LIST_1.map((url, idx) => (
-          <div key={idx}>
+          <ImageWrapper key={idx}>
             <Img src={url}></Img>
-          </div>
+          </ImageWrapper>
         ))}
       </Grid>
 
       <Spacing height={24}></Spacing>
 
       <Img
+        className="shadow-lg"
         src="/images/screenshots/polypoli/architecture.png"
-        width="50%"
+        width="40%"
       ></Img>
     </>
   );
 };
 
 export default Polypoli;
+
+const ImageWrapper = styled.div`
+  ${tw`shadow-lg`};
+`;

@@ -28,7 +28,7 @@ const FEInterview = () => {
 
       <Spacing height={24}></Spacing>
 
-      <Grid col={4} gap={16}>
+      <Grid col={5} gap={16}>
         {IMAGE_URL_LIST_0.map((url, idx) => (
           <ImageWrapper key={idx}>
             <Img src={url}></Img>
@@ -46,7 +46,7 @@ const FEInterview = () => {
 
       <Spacing height={24}></Spacing>
 
-      <Grid col={3} gap={16}>
+      <Grid col={5} gap={16}>
         {IMAGE_URL_LIST_1.map((url, idx) => (
           <ImageWrapper key={idx}>
             <Img src={url}></Img>

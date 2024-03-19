@@ -100,7 +100,7 @@ const VivaLeva = () => {
 
       <Img
         src="/images/screenshots/vivaleva/liquidity-chart.png"
-        width="75%"
+        width="50%"
       ></Img>
       <Spacing height={8}></Spacing>
       <Text.P>
