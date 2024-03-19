@@ -58,7 +58,7 @@ const FEInterview = () => {
 
       <Text.P>
         GA4를 연동하여 User가 어떤 질문을 많이 확인하고 검색하는지에 대한
-        event들을 tracking하였습니다.
+        event들을 tracking 하였습니다.
       </Text.P>
     </>
   );
