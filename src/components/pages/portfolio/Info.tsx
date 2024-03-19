@@ -17,14 +17,17 @@ const Info = ({
 }: PortfolioProject) => {
   return (
     <Flex col gap={8}>
-      <ProjectBadge>
-        {projectType}
-        {company && ` - ${company}`}
-      </ProjectBadge>
-      <Text.T2>{title}</Text.T2>
+      <Flex items="end" gap={16}>
+        <Text.T2>{title}</Text.T2>
+        <ProjectBadge>
+          {projectType}
+          {company && ` - ${company}`}
+        </ProjectBadge>
+      </Flex>
+
       {service && (
         <Flex gap={4}>
-          <Text medium>URL :</Text>
+          <Text>URL :</Text>
           <Text.Link
             href={service.url}
             lineThrough={!service.active}
@@ -35,6 +38,7 @@ const Info = ({
           {!service.active && <Text>(서비스 종료)</Text>}
         </Flex>
       )}
+
       {github && (
         <Flex gap={4}>
           <Text>GitHub :</Text>
@@ -43,7 +47,9 @@ const Info = ({
           </Text.Link>
         </Flex>
       )}
+
       <Text>{`Period : ${formatProjectPeriod(period)}`}</Text>
+
       <Text>{`Tech Stacks : ${techStacks.join(', ')}`}</Text>
     </Flex>
   );
