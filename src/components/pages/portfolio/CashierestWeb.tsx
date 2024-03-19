@@ -30,10 +30,11 @@ const CashierestWeb = () => {
 
       <Ul>
         <Li>프로젝트 아키텍처 설계</Li>
-        <Li>거래소 페이지 렌더링 성능 최적화</Li>
         <Li>
           Tradingview chart library를 통한 거래소 차트 구현 및 customizing
         </Li>
+        <Li>모바일 앱용 차트 Web view page 개발</Li>
+        <Li>거래소 페이지 렌더링 성능 최적화</Li>
         <Li>chart history API 응답 시간 단축</Li>
         <Li>Jenkins 배포 스크립트 설정 및 PM2 세팅</Li>
         <Li>GA 연동</Li>
