@@ -13,5 +13,5 @@ const PDFLayout = ({ ref, children }: Props) => {
 export default PDFLayout;
 
 const Wrapper = styled.div`
-  ${tw`flex-1 flex flex-col px-16 py-20`};
+  ${tw`flex-1 flex flex-col p-6`};
 `;

@@ -5,11 +5,11 @@ import Grid from '@/components/common/Grid';
 import Img from '@/components/common/Img';
 import Spacing from '@/components/common/Spacing';
 import Text from '@/components/common/Text';
-import Info from '@/components/pages/portfolio/Info';
+import ProjectInfo from '@/components/pages/portfolio/ProjectInfo';
 import { PORTFOLIO_PROJECTS } from '@/constants';
 import { Project } from '@/types';
 
-const INFO = PORTFOLIO_PROJECTS[Project.FEInterview];
+const PROJECT_INFO = PORTFOLIO_PROJECTS[Project.FEInterview];
 
 const IMAGE_URL_LIST_0 = [
   '/images/screenshots/fe-interview/home-dark.png',
@@ -24,11 +24,11 @@ const IMAGE_URL_LIST_1 = [
 const FEInterview = () => {
   return (
     <>
-      <Info {...INFO}></Info>
+      <ProjectInfo {...PROJECT_INFO}></ProjectInfo>
 
       <Spacing height={24}></Spacing>
 
-      <Grid col={4} gap={16}>
+      <Grid col={5} gap={16}>
         {IMAGE_URL_LIST_0.map((url, idx) => (
           <ImageWrapper key={idx}>
             <Img src={url}></Img>
@@ -46,7 +46,7 @@ const FEInterview = () => {
 
       <Spacing height={24}></Spacing>
 
-      <Grid col={3} gap={16}>
+      <Grid col={5} gap={16}>
         {IMAGE_URL_LIST_1.map((url, idx) => (
           <ImageWrapper key={idx}>
             <Img src={url}></Img>

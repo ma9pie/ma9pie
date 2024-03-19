@@ -6,23 +6,24 @@ import Img from '@/components/common/Img';
 import { Li, Ul } from '@/components/common/List';
 import Spacing from '@/components/common/Spacing';
 import Text from '@/components/common/Text';
-import Info from '@/components/pages/portfolio/Info';
+import ProjectInfo from '@/components/pages/portfolio/ProjectInfo';
 import { PORTFOLIO_PROJECTS } from '@/constants';
 import { Project } from '@/types';
 
-const INFO = PORTFOLIO_PROJECTS[Project.PurpleBridge];
+const PROJECT_INFO = PORTFOLIO_PROJECTS[Project.PurpleBridge];
 
 const IMAGE_URL_LIST = [
   '/images/screenshots/purplebridge/bridge.png',
   '/images/screenshots/purplebridge/swap.png',
   '/images/screenshots/purplebridge/add-liquidity.png',
   '/images/screenshots/purplebridge/remove-liquidity.png',
+  '/images/screenshots/purplebridge/dashboard.png',
 ];
 
 const PurpleBridge = () => {
   return (
     <>
-      <Info {...INFO}></Info>
+      <ProjectInfo {...PROJECT_INFO}></ProjectInfo>
 
       <Spacing height={40}></Spacing>
 
@@ -33,13 +34,6 @@ const PurpleBridge = () => {
           </div>
         ))}
       </Grid>
-
-      <Spacing height={16}></Spacing>
-
-      <Img
-        src="/images/screenshots/purplebridge/dashboard.png"
-        width="75%"
-      ></Img>
 
       <Spacing height={24}></Spacing>
 

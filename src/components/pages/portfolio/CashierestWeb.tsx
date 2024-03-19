@@ -1,24 +1,24 @@
 import React from 'react';
 
-import Flex from '@/components/common/Flex';
+import Grid from '@/components/common/Grid';
 import Img from '@/components/common/Img';
 import { Li, Ul } from '@/components/common/List';
 import Spacing from '@/components/common/Spacing';
 import Text from '@/components/common/Text';
-import Info from '@/components/pages/portfolio/Info';
+import ProjectInfo from '@/components/pages/portfolio/ProjectInfo';
 import { PORTFOLIO_PROJECTS } from '@/constants';
 import { Project } from '@/types';
 
-const INFO = PORTFOLIO_PROJECTS[Project.CashierestWeb];
+const PROJECT_INFO = PORTFOLIO_PROJECTS[Project.CashierestWeb];
 
 const CashierestWeb = () => {
   return (
     <>
-      <Info {...INFO}></Info>
+      <ProjectInfo {...PROJECT_INFO}></ProjectInfo>
 
       <Spacing height={24}></Spacing>
 
-      <Img src="/images/screenshots/cashierest/trade.png" width="75%"></Img>
+      <Img src="/images/screenshots/cashierest/trade.png" width="50%"></Img>
 
       <Spacing height={24}></Spacing>
 
@@ -64,19 +64,6 @@ const CashierestWeb = () => {
         있어 거래소 페이지 최적화를 진행하였었습니다.
       </Text.P>
 
-      <Flex gap={16}>
-        <Img
-          src="/images/screenshots/cashierest/coin-list.png"
-          width="25%"
-        ></Img>
-        <Img
-          src="/images/screenshots/cashierest/orderbook.png"
-          width="25%"
-        ></Img>
-      </Flex>
-
-      <Spacing height={8}></Spacing>
-
       <Text.P>
         먼저 거래소 페이지의 경우 크게 코인 리스트, 차트, 주문, 체결 내역, 거래
         내역 컴포넌트 5가지로 나뉘는데, Devtools를 활용하여 코인 리스트와
@@ -99,6 +86,11 @@ const CashierestWeb = () => {
         repaint 과정을 거치지 않는 transform 속성 사용을 통해서 해당 문제를
         해결할 수 있었습니다.
       </Text.P>
+
+      <Grid col={5} gap={16}>
+        <Img src="/images/screenshots/cashierest/coin-list.png"></Img>
+        <Img src="/images/screenshots/cashierest/orderbook.png"></Img>
+      </Grid>
 
       <Spacing height={24}></Spacing>
 
@@ -126,11 +118,11 @@ const CashierestWeb = () => {
         느린 문제가 있었습니다.
       </Text.P>
 
-      <Img src="/images/screenshots/cashierest/chart.png" width="75%"></Img>
+      <Img src="/images/screenshots/cashierest/chart.png" width="50%"></Img>
       <Spacing height={8}></Spacing>
       <Img
         src="/images/screenshots/cashierest/history-api.png"
-        width="75%"
+        width="50%"
       ></Img>
 
       <Spacing height={8}></Spacing>

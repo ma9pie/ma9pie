@@ -5,11 +5,11 @@ import Img from '@/components/common/Img';
 import { Li, Ul } from '@/components/common/List';
 import Spacing from '@/components/common/Spacing';
 import Text from '@/components/common/Text';
-import Info from '@/components/pages/portfolio/Info';
+import ProjectInfo from '@/components/pages/portfolio/ProjectInfo';
 import { PORTFOLIO_PROJECTS } from '@/constants';
 import { Project } from '@/types';
 
-const INFO = PORTFOLIO_PROJECTS[Project.PPGG];
+const PROJECT_INFO = PORTFOLIO_PROJECTS[Project.PPGG];
 
 const IMAGE_URL_LIST_0 = [
   '/images/screenshots/ppgg/home.png',
@@ -27,11 +27,11 @@ const IMAGE_URL_LIST_1 = [
 const PPGG = () => {
   return (
     <>
-      <Info {...INFO}></Info>
+      <ProjectInfo {...PROJECT_INFO}></ProjectInfo>
 
       <Spacing height={24}></Spacing>
 
-      <Grid col={4} gap={16}>
+      <Grid col={5} gap={16}>
         {IMAGE_URL_LIST_0.map((url, idx) => (
           <div key={idx}>
             <Img src={url}></Img>
@@ -54,7 +54,7 @@ const PPGG = () => {
 
       <Spacing height={24}></Spacing>
 
-      <Grid col={4} gap={16}>
+      <Grid col={5} gap={16}>
         {IMAGE_URL_LIST_1.map((url, idx) => (
           <div key={idx}>
             <Img src={url}></Img>

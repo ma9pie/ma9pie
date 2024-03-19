@@ -1,16 +1,16 @@
 import React from 'react';
 import tw, { styled } from 'twin.macro';
 
-import Flex from '@/components/common/Flex';
+import Grid from '@/components/common/Grid';
 import Img from '@/components/common/Img';
 import { Li, Ul } from '@/components/common/List';
 import Spacing from '@/components/common/Spacing';
 import Text from '@/components/common/Text';
-import Info from '@/components/pages/portfolio/Info';
+import ProjectInfo from '@/components/pages/portfolio/ProjectInfo';
 import { PORTFOLIO_PROJECTS } from '@/constants';
 import { Project } from '@/types';
 
-const INFO = PORTFOLIO_PROJECTS[Project.TodoListApp];
+const PROJECT_INFO = PORTFOLIO_PROJECTS[Project.TodoListApp];
 
 const IMAGE_URL_LIST_0 = [
   '/images/screenshots/todo-list-app/iphone-login.png',
@@ -27,17 +27,17 @@ const IMAGE_URL_LIST_1 = [
 const TodoListApp = () => {
   return (
     <>
-      <Info {...INFO}></Info>
+      <ProjectInfo {...PROJECT_INFO}></ProjectInfo>
 
       <Spacing height={24}></Spacing>
 
-      <Flex gap={16}>
+      <Grid col={5} gap={16}>
         {IMAGE_URL_LIST_0.map((url, idx) => (
-          <div key={idx} className="flex-1">
+          <div key={idx}>
             <Img src={url} priority></Img>
           </div>
         ))}
-      </Flex>
+      </Grid>
 
       <Spacing height={8}></Spacing>
 
@@ -64,13 +64,13 @@ const TodoListApp = () => {
 
       <Spacing height={24}></Spacing>
 
-      <Flex gap={16}>
+      <Grid col={5} gap={16}>
         {IMAGE_URL_LIST_1.map((url, idx) => (
           <ImageWrapper key={idx}>
             <Img src={url} priority></Img>
           </ImageWrapper>
         ))}
-      </Flex>
+      </Grid>
 
       <Spacing height={8}></Spacing>
 

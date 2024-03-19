@@ -1,15 +1,16 @@
 import React from 'react';
+import tw, { styled } from 'twin.macro';
 
 import Grid from '@/components/common/Grid';
 import Img from '@/components/common/Img';
 import { Li, Ul } from '@/components/common/List';
 import Spacing from '@/components/common/Spacing';
 import Text from '@/components/common/Text';
-import Info from '@/components/pages/portfolio/Info';
+import ProjectInfo from '@/components/pages/portfolio/ProjectInfo';
 import { PORTFOLIO_PROJECTS } from '@/constants';
 import { Project } from '@/types';
 
-const INFO = PORTFOLIO_PROJECTS[Project.Polypoli];
+const PROJECT_INFO = PORTFOLIO_PROJECTS[Project.Polypoli];
 
 const IMAGE_URL_LIST_0 = [
   '/images/screenshots/polypoli/login.png',
@@ -27,15 +28,15 @@ const IMAGE_URL_LIST_1 = [
 const Polypoli = () => {
   return (
     <>
-      <Info {...INFO}></Info>
+      <ProjectInfo {...PROJECT_INFO}></ProjectInfo>
 
       <Spacing height={24}></Spacing>
 
-      <Grid col={4} gap={16}>
+      <Grid col={5} gap={16}>
         {IMAGE_URL_LIST_0.map((url, idx) => (
-          <div key={idx}>
+          <ImageWrapper key={idx}>
             <Img src={url}></Img>
-          </div>
+          </ImageWrapper>
         ))}
       </Grid>
 
@@ -65,22 +66,27 @@ const Polypoli = () => {
 
       <Spacing height={24}></Spacing>
 
-      <Grid col={4} gap={16}>
+      <Grid col={5} gap={16}>
         {IMAGE_URL_LIST_1.map((url, idx) => (
-          <div key={idx}>
+          <ImageWrapper key={idx}>
             <Img src={url}></Img>
-          </div>
+          </ImageWrapper>
         ))}
       </Grid>
 
       <Spacing height={24}></Spacing>
 
       <Img
+        className="shadow-lg"
         src="/images/screenshots/polypoli/architecture.png"
-        width="50%"
+        width="40%"
       ></Img>
     </>
   );
 };
 
 export default Polypoli;
+
+const ImageWrapper = styled.div`
+  ${tw`shadow-lg`};
+`;

@@ -1,11 +1,13 @@
 import React from 'react';
 import tw, { styled } from 'twin.macro';
 
+import Spacing from '@/components/common/Spacing';
 import Text from '@/components/common/Text';
 import Divider from '@/components/layouts/Divider';
 import CashierestMobile from '@/components/pages/portfolio/CashierestMobile';
 import CashierestWeb from '@/components/pages/portfolio/CashierestWeb';
 import FEInterview from '@/components/pages/portfolio/FEInterview';
+import Info from '@/components/pages/portfolio/Info';
 import Mitosis from '@/components/pages/portfolio/Mitosis';
 import Polypoli from '@/components/pages/portfolio/Polypoli';
 import PPGG from '@/components/pages/portfolio/PPGG';
@@ -65,7 +67,11 @@ const SECTIONS = [
 const Portfolio = () => {
   return (
     <Wrapper>
-      <Text.T1>Portfolio</Text.T1>
+      <Container>
+        <Text.T1>Portfolio</Text.T1>
+        <Info></Info>
+      </Container>
+
       {SECTIONS.map(({ key, Component }, idx) => (
         <section key={key}>
           <Divider></Divider>
@@ -80,4 +86,7 @@ export default Portfolio;
 
 const Wrapper = styled.div`
   ${tw``};
+`;
+const Container = styled.div`
+  ${tw`flex flex-col gap-6`};
 `;

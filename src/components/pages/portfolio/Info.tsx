@@ -1,58 +1,54 @@
 import React from 'react';
+import tw, { styled } from 'twin.macro';
 
 import Flex from '@/components/common/Flex';
-import ProjectBadge from '@/components/common/ProjectBadge';
-import Text from '@/components/common/Text';
-import { PortfolioProject } from '@/types';
-import { formatProjectPeriod } from '@/utils';
+import { EMAIL, NAME, PHONE_NUMBER } from '@/constants';
+import { InfoType, Position } from '@/types';
 
-const Info = ({
-  company,
-  projectType,
-  title,
-  period,
-  service,
-  github,
-  techStacks,
-}: PortfolioProject) => {
+const INFO = [
+  {
+    type: InfoType.Name,
+    value: NAME,
+  },
+  {
+    type: InfoType.Position,
+    value: Position.Frontend,
+  },
+  {
+    type: InfoType.Phone,
+    value: PHONE_NUMBER,
+  },
+  {
+    type: InfoType.Email,
+    value: EMAIL,
+  },
+];
+
+const Info = () => {
   return (
-    <Flex col gap={8}>
-      <Flex items="end" gap={16}>
-        <Text.T2>{title}</Text.T2>
-        <ProjectBadge>
-          {projectType}
-          {company && ` - ${company}`}
-        </ProjectBadge>
-      </Flex>
-
-      {service && (
-        <Flex gap={4}>
-          <Text>URL :</Text>
-          <Text.Link
-            href={service.url}
-            lineThrough={!service.active}
-            target="_blank"
-          >
-            {service.url}
-          </Text.Link>
-          {!service.active && <Text>(서비스 종료)</Text>}
-        </Flex>
-      )}
-
-      {github && (
-        <Flex gap={4}>
-          <Text>GitHub :</Text>
-          <Text.Link href={github} target="_blank">
-            {github}
-          </Text.Link>
-        </Flex>
-      )}
-
-      <Text>{`Period : ${formatProjectPeriod(period)}`}</Text>
-
-      <Text>{`Tech Stacks : ${techStacks.join(', ')}`}</Text>
+    <Flex col gap={4}>
+      {INFO.map(({ type, value }) => (
+        <Row key={type}>
+          <Text>{type}</Text>
+          <Text>{value}</Text>
+        </Row>
+      ))}
     </Flex>
   );
 };
 
 export default Info;
+
+const Row = styled.div`
+  ${tw`flex`};
+  ${tw`mobile:gap-2`};
+  ${tw`desktop:gap-4`};
+  & p:nth-of-type(1) {
+    ${tw`mobile:min-w-16`};
+    ${tw`desktop:min-w-24`};
+  }
+`;
+const Text = styled.p`
+  ${tw`mobile:text-sm break-all`};
+  ${tw`desktop:text-lg`};
+`;

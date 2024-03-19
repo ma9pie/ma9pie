@@ -5,11 +5,11 @@ import Img from '@/components/common/Img';
 import { Li, Ul } from '@/components/common/List';
 import Spacing from '@/components/common/Spacing';
 import Text from '@/components/common/Text';
-import Info from '@/components/pages/portfolio/Info';
+import ProjectInfo from '@/components/pages/portfolio/ProjectInfo';
 import { PORTFOLIO_PROJECTS } from '@/constants';
 import { Project } from '@/types';
 
-const INFO = PORTFOLIO_PROJECTS[Project.VivaLeva];
+const PROJECT_INFO = PORTFOLIO_PROJECTS[Project.VivaLeva];
 
 const IMAGE_URL_LIST = [
   '/images/screenshots/vivaleva/home.png',
@@ -23,7 +23,7 @@ const IMAGE_URL_LIST = [
 const VivaLeva = () => {
   return (
     <>
-      <Info {...INFO}></Info>
+      <ProjectInfo {...PROJECT_INFO}></ProjectInfo>
 
       <Spacing height={40}></Spacing>
 
@@ -100,7 +100,7 @@ const VivaLeva = () => {
 
       <Img
         src="/images/screenshots/vivaleva/liquidity-chart.png"
-        width="75%"
+        width="50%"
       ></Img>
       <Spacing height={8}></Spacing>
       <Text.P>
