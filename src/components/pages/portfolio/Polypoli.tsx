@@ -42,8 +42,8 @@ const Polypoli = () => {
       <Spacing height={8}></Spacing>
 
       <Text.P>
-        Polypoli는 자신이 관심 있어하는 국회의원에 대한 정보를 정리해서
-        Instagram이나 Twitter처럼 타임라인 피드로 볼 수 있는 서비스입니다.
+        Polypoli는 자신이 관심 있어하는 국회의원에 대한 정보를 Instagram이나
+        Twitter처럼 타임라인 피드로 볼 수 있는 서비스입니다.
       </Text.P>
 
       <Text.P semibold>[FE]</Text.P>
