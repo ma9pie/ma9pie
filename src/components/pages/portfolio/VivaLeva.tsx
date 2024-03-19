@@ -11,6 +11,15 @@ import { Project } from '@/types';
 
 const INFO = PORTFOLIO_PROJECTS[Project.VivaLeva];
 
+const IMAGE_URL_LIST = [
+  '/images/screenshots/vivaleva/home.png',
+  '/images/screenshots/vivaleva/lend.png',
+  '/images/screenshots/vivaleva/stake.png',
+  '/images/screenshots/vivaleva/farm.png',
+  '/images/screenshots/vivaleva/portfolio.png',
+  '/images/screenshots/vivaleva/farm-modal.png',
+];
+
 const VivaLeva = () => {
   return (
     <>
@@ -19,18 +28,11 @@ const VivaLeva = () => {
       <Spacing height={40}></Spacing>
 
       <Grid col={2} gap={16}>
-        <Img src="/images/screenshots/vivaleva/home.png" width="100%"></Img>
-        <Img src="/images/screenshots/vivaleva/lend.png" width="100%"></Img>
-        <Img src="/images/screenshots/vivaleva/stake.png" width="100%"></Img>
-        <Img src="/images/screenshots/vivaleva/farm.png" width="100%"></Img>
-        <Img
-          src="/images/screenshots/vivaleva/portfolio.png"
-          width="100%"
-        ></Img>
-        <Img
-          src="/images/screenshots/vivaleva/farm-modal.png"
-          width="100%"
-        ></Img>
+        {IMAGE_URL_LIST.map((url, idx) => (
+          <div key={idx}>
+            <Img src={url}></Img>
+          </div>
+        ))}
       </Grid>
 
       <Spacing height={24}></Spacing>

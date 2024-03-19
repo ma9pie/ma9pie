@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Flex from '@/components/common/Flex';
+import Grid from '@/components/common/Grid';
 import Img from '@/components/common/Img';
 import { Li, Ul } from '@/components/common/List';
 import Spacing from '@/components/common/Spacing';
@@ -11,6 +11,11 @@ import { Project } from '@/types';
 
 const INFO = PORTFOLIO_PROJECTS[Project.TealswapV3];
 
+const IMAGE_URL_LIST = [
+  '/images/screenshots/tealswapv3/add-liquidity.png',
+  '/images/screenshots/tealswapv3/remove-liquidity.png',
+];
+
 const TealswapV3 = () => {
   return (
     <>
@@ -18,20 +23,13 @@ const TealswapV3 = () => {
 
       <Spacing height={40}></Spacing>
 
-      <Flex gap={16}>
-        <Flex flex={1}>
-          <Img
-            src="/images/screenshots/tealswapv3/add-liquidity.png"
-            width="100%"
-          ></Img>
-        </Flex>
-        <Flex flex={1}>
-          <Img
-            src="/images/screenshots/tealswapv3/remove-liquidity.png"
-            width="100%"
-          ></Img>
-        </Flex>
-      </Flex>
+      <Grid col={2} gap={16}>
+        {IMAGE_URL_LIST.map((url, idx) => (
+          <div key={idx}>
+            <Img src={url} priority></Img>
+          </div>
+        ))}
+      </Grid>
 
       <Spacing height={24}></Spacing>
 

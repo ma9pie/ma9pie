@@ -12,6 +12,13 @@ import { Project } from '@/types';
 
 const INFO = PORTFOLIO_PROJECTS[Project.PurpleBridge];
 
+const IMAGE_URL_LIST = [
+  '/images/screenshots/purplebridge/bridge.png',
+  '/images/screenshots/purplebridge/swap.png',
+  '/images/screenshots/purplebridge/add-liquidity.png',
+  '/images/screenshots/purplebridge/remove-liquidity.png',
+];
+
 const PurpleBridge = () => {
   return (
     <>
@@ -20,19 +27,11 @@ const PurpleBridge = () => {
       <Spacing height={40}></Spacing>
 
       <Grid col={2} gap={16}>
-        <Img
-          src="/images/screenshots/purplebridge/bridge.png"
-          width="100%"
-        ></Img>
-        <Img src="/images/screenshots/purplebridge/swap.png" width="100%"></Img>
-        <Img
-          src="/images/screenshots/purplebridge/add-liquidity.png"
-          width="100%"
-        ></Img>
-        <Img
-          src="/images/screenshots/purplebridge/remove-liquidity.png"
-          width="100%"
-        ></Img>
+        {IMAGE_URL_LIST.map((url, idx) => (
+          <div key={idx}>
+            <Img src={url}></Img>
+          </div>
+        ))}
       </Grid>
 
       <Spacing height={16}></Spacing>

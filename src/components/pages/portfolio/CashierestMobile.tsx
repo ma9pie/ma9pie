@@ -12,6 +12,14 @@ import { Project } from '@/types';
 
 const INFO = PORTFOLIO_PROJECTS[Project.CashierestMobile];
 
+const IMAGE_URL_LIST = [
+  '/images/screenshots/cashierest/mobile-home.png',
+  '/images/screenshots/cashierest/mobile-coin-list.png',
+  '/images/screenshots/cashierest/mobile-order.png',
+  '/images/screenshots/cashierest/mobile-orderbook.png',
+  '/images/screenshots/cashierest/mobile-chart.png',
+];
+
 const CashierestMobile = () => {
   return (
     <>
@@ -20,36 +28,11 @@ const CashierestMobile = () => {
       <Spacing height={24}></Spacing>
 
       <Flex gap={16}>
-        <ImageWrapper>
-          <Img
-            src="/images/screenshots/cashierest/mobile-home.png"
-            width="100%"
-          ></Img>
-        </ImageWrapper>
-        <ImageWrapper>
-          <Img
-            src="/images/screenshots/cashierest/mobile-coin-list.png"
-            width="100%"
-          ></Img>
-        </ImageWrapper>
-        <ImageWrapper>
-          <Img
-            src="/images/screenshots/cashierest/mobile-order.png"
-            width="100%"
-          ></Img>
-        </ImageWrapper>
-        <ImageWrapper>
-          <Img
-            src="/images/screenshots/cashierest/mobile-orderbook.png"
-            width="100%"
-          ></Img>
-        </ImageWrapper>
-        <ImageWrapper>
-          <Img
-            src="/images/screenshots/cashierest/mobile-chart.png"
-            width="100%"
-          ></Img>
-        </ImageWrapper>
+        {IMAGE_URL_LIST.map((url, idx) => (
+          <ImageWrapper key={idx}>
+            <Img src={url}></Img>
+          </ImageWrapper>
+        ))}
       </Flex>
 
       <Spacing height={24}></Spacing>

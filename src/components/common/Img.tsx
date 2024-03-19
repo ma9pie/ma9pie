@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React, { useMemo } from 'react';
 
 interface Props {
-  key?: string;
+  key?: number | string;
   className?: string;
   src: string;
   width?: number | string;

@@ -11,6 +11,16 @@ import { Project } from '@/types';
 
 const INFO = PORTFOLIO_PROJECTS[Project.FEInterview];
 
+const IMAGE_URL_LIST_0 = [
+  '/images/screenshots/fe-interview/home-dark.png',
+  '/images/screenshots/fe-interview/home-light.png',
+];
+const IMAGE_URL_LIST_1 = [
+  '/images/screenshots/fe-interview/visitors.png',
+  '/images/screenshots/fe-interview/event-label.png',
+  '/images/screenshots/fe-interview/event-category.png',
+];
+
 const FEInterview = () => {
   return (
     <>
@@ -19,18 +29,11 @@ const FEInterview = () => {
       <Spacing height={24}></Spacing>
 
       <Grid col={4} gap={16}>
-        <ImageWrapper>
-          <Img
-            src="/images/screenshots/fe-interview/home-dark.png"
-            width="100%"
-          ></Img>
-        </ImageWrapper>
-        <ImageWrapper>
-          <Img
-            src="/images/screenshots/fe-interview/home-light.png"
-            width="100%"
-          ></Img>
-        </ImageWrapper>
+        {IMAGE_URL_LIST_0.map((url, idx) => (
+          <ImageWrapper key={idx}>
+            <Img src={url}></Img>
+          </ImageWrapper>
+        ))}
       </Grid>
 
       <Spacing height={8}></Spacing>
@@ -44,24 +47,11 @@ const FEInterview = () => {
       <Spacing height={24}></Spacing>
 
       <Grid col={3} gap={16}>
-        <ImageWrapper>
-          <Img
-            src="/images/screenshots/fe-interview/visitors.png"
-            width="100%"
-          ></Img>
-        </ImageWrapper>
-        <ImageWrapper>
-          <Img
-            src="/images/screenshots/fe-interview/event-label.png"
-            width="100%"
-          ></Img>
-        </ImageWrapper>
-        <ImageWrapper>
-          <Img
-            src="/images/screenshots/fe-interview/event-category.png"
-            width="100%"
-          ></Img>
-        </ImageWrapper>
+        {IMAGE_URL_LIST_1.map((url, idx) => (
+          <ImageWrapper key={idx}>
+            <Img src={url}></Img>
+          </ImageWrapper>
+        ))}
       </Grid>
 
       <Spacing height={8}></Spacing>

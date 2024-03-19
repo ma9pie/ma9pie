@@ -11,6 +11,19 @@ import { Project } from '@/types';
 
 const INFO = PORTFOLIO_PROJECTS[Project.Polypoli];
 
+const IMAGE_URL_LIST_0 = [
+  '/images/screenshots/polypoli/login.png',
+  '/images/screenshots/polypoli/feed.png',
+  '/images/screenshots/polypoli/members.png',
+  '/images/screenshots/polypoli/follow.png',
+];
+const IMAGE_URL_LIST_1 = [
+  '/images/screenshots/polypoli/details.png',
+  '/images/screenshots/polypoli/bill.png',
+  '/images/screenshots/polypoli/barchart.png',
+  '/images/screenshots/polypoli/search.png',
+];
+
 const Polypoli = () => {
   return (
     <>
@@ -19,10 +32,11 @@ const Polypoli = () => {
       <Spacing height={24}></Spacing>
 
       <Grid col={4} gap={16}>
-        <Img src="/images/screenshots/polypoli/login.png" width="100%"></Img>
-        <Img src="/images/screenshots/polypoli/feed.png" width="100%"></Img>
-        <Img src="/images/screenshots/polypoli/members.png" width="100%"></Img>
-        <Img src="/images/screenshots/polypoli/follow.png" width="100%"></Img>
+        {IMAGE_URL_LIST_0.map((url, idx) => (
+          <div key={idx}>
+            <Img src={url}></Img>
+          </div>
+        ))}
       </Grid>
 
       <Spacing height={8}></Spacing>
@@ -52,10 +66,11 @@ const Polypoli = () => {
       <Spacing height={24}></Spacing>
 
       <Grid col={4} gap={16}>
-        <Img src="/images/screenshots/polypoli/details.png" width="100%"></Img>
-        <Img src="/images/screenshots/polypoli/bill.png" width="100%"></Img>
-        <Img src="/images/screenshots/polypoli/barchart.png" width="100%"></Img>
-        <Img src="/images/screenshots/polypoli/search.png" width="100%"></Img>
+        {IMAGE_URL_LIST_1.map((url, idx) => (
+          <div key={idx}>
+            <Img src={url}></Img>
+          </div>
+        ))}
       </Grid>
 
       <Spacing height={24}></Spacing>

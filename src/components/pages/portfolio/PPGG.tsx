@@ -11,6 +11,19 @@ import { Project } from '@/types';
 
 const INFO = PORTFOLIO_PROJECTS[Project.PPGG];
 
+const IMAGE_URL_LIST_0 = [
+  '/images/screenshots/ppgg/home.png',
+  '/images/screenshots/ppgg/login.png',
+  '/images/screenshots/ppgg/player-hsitory.png',
+  '/images/screenshots/ppgg/player-chart.png',
+];
+const IMAGE_URL_LIST_1 = [
+  '/images/screenshots/ppgg/tos.png',
+  '/images/screenshots/ppgg/signup-input.png',
+  '/images/screenshots/ppgg/select-profile.png',
+  '/images/screenshots/ppgg/signup-completed.png',
+];
+
 const PPGG = () => {
   return (
     <>
@@ -19,13 +32,11 @@ const PPGG = () => {
       <Spacing height={24}></Spacing>
 
       <Grid col={4} gap={16}>
-        <Img src="/images/screenshots/ppgg/home.png" width="100%"></Img>
-        <Img src="/images/screenshots/ppgg/login.png" width="100%"></Img>
-        <Img
-          src="/images/screenshots/ppgg/player-hsitory.png"
-          width="100%"
-        ></Img>
-        <Img src="/images/screenshots/ppgg/player-chart.png" width="100%"></Img>
+        {IMAGE_URL_LIST_0.map((url, idx) => (
+          <div key={idx}>
+            <Img src={url}></Img>
+          </div>
+        ))}
       </Grid>
 
       <Spacing height={8}></Spacing>
@@ -44,16 +55,11 @@ const PPGG = () => {
       <Spacing height={24}></Spacing>
 
       <Grid col={4} gap={16}>
-        <Img src="/images/screenshots/ppgg/tos.png" width="100%"></Img>
-        <Img src="/images/screenshots/ppgg/signup-input.png" width="100%"></Img>
-        <Img
-          src="/images/screenshots/ppgg/select-profile.png"
-          width="100%"
-        ></Img>
-        <Img
-          src="/images/screenshots/ppgg/signup-completed.png"
-          width="100%"
-        ></Img>
+        {IMAGE_URL_LIST_1.map((url, idx) => (
+          <div key={idx}>
+            <Img src={url}></Img>
+          </div>
+        ))}
       </Grid>
 
       <Spacing height={8}></Spacing>

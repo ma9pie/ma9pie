@@ -1,5 +1,4 @@
 import React from 'react';
-import tw, { styled } from 'twin.macro';
 
 import Img from '@/components/common/Img';
 import { Li, Ul } from '@/components/common/List';

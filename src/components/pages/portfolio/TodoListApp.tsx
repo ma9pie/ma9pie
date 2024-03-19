@@ -12,6 +12,18 @@ import { Project } from '@/types';
 
 const INFO = PORTFOLIO_PROJECTS[Project.TodoListApp];
 
+const IMAGE_URL_LIST_0 = [
+  '/images/screenshots/todo-list-app/iphone-login.png',
+  '/images/screenshots/todo-list-app/iphone-add-list.png',
+  '/images/screenshots/todo-list-app/iphone-task.png',
+];
+const IMAGE_URL_LIST_1 = [
+  '/images/screenshots/todo-list-app/home.png',
+  '/images/screenshots/todo-list-app/delete-list.png',
+  '/images/screenshots/todo-list-app/sidebar.png',
+  '/images/screenshots/todo-list-app/settings.png',
+];
+
 const TodoListApp = () => {
   return (
     <>
@@ -20,24 +32,11 @@ const TodoListApp = () => {
       <Spacing height={24}></Spacing>
 
       <Flex gap={16}>
-        <Flex flex={1}>
-          <Img
-            src="/images/screenshots/todo-list-app/iphone-login.png"
-            width="75%"
-          ></Img>
-        </Flex>
-        <Flex flex={1}>
-          <Img
-            src="/images/screenshots/todo-list-app/iphone-add-list.png"
-            width="75%"
-          ></Img>
-        </Flex>
-        <Flex flex={1}>
-          <Img
-            src="/images/screenshots/todo-list-app/iphone-task.png"
-            width="75%"
-          ></Img>
-        </Flex>
+        {IMAGE_URL_LIST_0.map((url, idx) => (
+          <div key={idx} className="flex-1">
+            <Img src={url} priority></Img>
+          </div>
+        ))}
       </Flex>
 
       <Spacing height={8}></Spacing>
@@ -66,30 +65,11 @@ const TodoListApp = () => {
       <Spacing height={24}></Spacing>
 
       <Flex gap={16}>
-        <ImageWrapper>
-          <Img
-            src="/images/screenshots/todo-list-app/home.png"
-            width="100%"
-          ></Img>
-        </ImageWrapper>
-        <ImageWrapper>
-          <Img
-            src="/images/screenshots/todo-list-app/delete-list.png"
-            width="100%"
-          ></Img>
-        </ImageWrapper>
-        <ImageWrapper>
-          <Img
-            src="/images/screenshots/todo-list-app/sidebar.png"
-            width="100%"
-          ></Img>
-        </ImageWrapper>
-        <ImageWrapper>
-          <Img
-            src="/images/screenshots/todo-list-app/settings.png"
-            width="100%"
-          ></Img>
-        </ImageWrapper>
+        {IMAGE_URL_LIST_1.map((url, idx) => (
+          <ImageWrapper key={idx}>
+            <Img src={url} priority></Img>
+          </ImageWrapper>
+        ))}
       </Flex>
 
       <Spacing height={8}></Spacing>
