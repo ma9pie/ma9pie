@@ -1,6 +1,6 @@
 import React from 'react';
-import tw, { styled } from 'twin.macro';
 
+import Divider from '@/components/layouts/Divider';
 import Articles from '@/components/pages/resume/Articles';
 import Blog from '@/components/pages/resume/Blog';
 import Education from '@/components/pages/resume/Education';
@@ -10,35 +10,52 @@ import Introduction from '@/components/pages/resume/Introduction';
 import Skills from '@/components/pages/resume/Skills';
 import Type from '@/components/pages/resume/Type';
 
+const SECTIONS = [
+  {
+    key: 'info',
+    Component: Info,
+  },
+  {
+    key: 'introduction',
+    Component: Introduction,
+  },
+  {
+    key: 'type',
+    Component: Type,
+  },
+  {
+    key: 'experiences',
+    Component: Experiences,
+  },
+  {
+    key: 'skills',
+    Component: Skills,
+  },
+  {
+    key: 'blog',
+    Component: Blog,
+  },
+  {
+    key: 'education',
+    Component: Education,
+  },
+  {
+    key: 'articles',
+    Component: Articles,
+  },
+];
+
 const Resume = () => {
   return (
-    <Wrapper>
-      <Info></Info>
-      <Divider></Divider>
-      <Introduction></Introduction>
-      <Divider></Divider>
-      <Type></Type>
-      <Divider></Divider>
-      <Experiences></Experiences>
-      <Divider></Divider>
-      <Skills></Skills>
-      <Divider></Divider>
-      <Blog></Blog>
-      <Divider></Divider>
-      <Education></Education>
-      <Divider></Divider>
-      <Articles></Articles>
-    </Wrapper>
+    <div>
+      {SECTIONS.map(({ key, Component }, idx) => (
+        <section key={key}>
+          {idx > 0 && <Divider></Divider>}
+          <Component></Component>
+        </section>
+      ))}
+    </div>
   );
 };
 
 export default Resume;
-
-const Wrapper = styled.div`
-  ${tw`flex flex-col`};
-`;
-const Divider = styled.div`
-  ${tw`w-full h-px bg-neutral-200`};
-  ${tw`mobile:my-8`};
-  ${tw`desktop:my-16`};
-`;

@@ -1,3 +1,5 @@
+import { Project } from '@/types';
+
 export const GITHUB_URL = 'https://github.com/ma9pie';
 export const BLOG_URL = 'https://cocoon1787.tistory.com';
 export const LINKEDIN_URL =
@@ -9,3 +11,31 @@ export const ARTICLE_URLS = [
     url: 'https://cocoon1787.tistory.com/875',
   },
 ];
+
+export const SERVICE_URLS: Record<Project, string> = {
+  [Project.SoohoIoHomepage]: 'https://sooho.io',
+  [Project.TealswapV3]: 'https://app.tealswap.com/en/',
+  [Project.Mitosis]: 'https://mitosis.finance',
+  [Project.VivaLeva]: 'https://vivaleva.com',
+  [Project.PurpleBridge]: 'https://purplebridge.link',
+  [Project.CashierestWeb]: 'https://www.cashierest.com',
+  [Project.CashierestMobile]: 'https://m.cashierest.com',
+  [Project.TodoListApp]: 'https://check-todo.vercel.app',
+  [Project.PPGG]: 'https://ppgg.vercel.app',
+  [Project.FEInterview]: 'https://frontend-interview-question.vercel.app',
+  [Project.Polypoli]: 'http://polypoli.kr',
+};
+
+export const GIT_REPOSITORY_URLS: Record<Project, string | null> = {
+  [Project.SoohoIoHomepage]: null,
+  [Project.TealswapV3]: null,
+  [Project.Mitosis]: null,
+  [Project.VivaLeva]: null,
+  [Project.PurpleBridge]: null,
+  [Project.CashierestWeb]: null,
+  [Project.CashierestMobile]: null,
+  [Project.TodoListApp]: 'https://github.com/ma9pie/todo-list-app',
+  [Project.PPGG]: 'https://github.com/ma9pie/pp.gg',
+  [Project.FEInterview]: 'https://github.com/ma9pie/frontend-interview',
+  [Project.Polypoli]: null,
+};

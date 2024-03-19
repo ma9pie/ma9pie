@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React from 'react';
 import tw, { styled } from 'twin.macro';
 
@@ -148,15 +147,17 @@ Text.T4 = styled(Text)`
   ${tw`mobile:text-base`};
   ${tw`desktop:text-xl`};
 `;
-Text.P = styled.p`
+Text.P = styled(Text)`
   ${tw`mb-2`};
   ${tw`mobile:text-base`};
   ${tw`desktop:text-lg`};
 `;
-Text.Link = styled(Link)`
-  ${tw`mb-2 text-neutral-400 underline underline-offset-[6px] decoration-neutral-200`};
-  ${tw`mobile:text-base`};
-  ${tw`desktop:text-lg`};
+Text.Link = styled.a<{ lineThrough?: boolean }>`
+  ${tw`text-neutral-400 underline underline-offset-[6px] decoration-neutral-200`};
+  ${({ lineThrough }) =>
+    lineThrough
+      ? tw`text-neutral-900 decoration-neutral-900 line-through pointer-events-none`
+      : tw`text-neutral-400 decoration-neutral-300`};
 `;
 
 export default Text;
