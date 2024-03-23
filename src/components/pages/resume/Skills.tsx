@@ -35,7 +35,7 @@ const Skills = () => {
         <Ul>
           <Li>서비스 런칭 경험이 있습니다.</Li>
           <Li>Next.js 사용에 익숙합니다.</Li>
-          <Li>Styled component, Tailwindcss 방식의 스타일링을 선호합니다.</Li>
+          <Li>Styled component 방식의 스타일링을 선호합니다.</Li>
           <Li>Javascript ES6+ 와 Typescript 사용이 가능합니다.</Li>
           <Li>
             페이지 로드 시간과 사용자 이탈률 사이의 관계를 알고 웹 성능 최적화
@@ -46,7 +46,7 @@ const Skills = () => {
               </Li>
               <Li>
                 성능 개선(Throttling, Debouncing, List virtualization, Code
-                splitting)
+                splitting, Lazy loading)
               </Li>
               <Li>비동기 처리 최적화를 통한 로드 시간 단축</Li>
             </Ul>
