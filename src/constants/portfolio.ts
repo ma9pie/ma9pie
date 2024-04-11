@@ -33,6 +33,12 @@ const createProject = ({
 };
 
 export const PORTFOLIO_PROJECTS: Record<Project, PortfolioProject> = {
+  [Project.CryptoErp]: createProject({
+    company: Company.SoohoIo,
+    projectType: ProjectType.Work,
+    project: Project.CryptoErp,
+    active: true,
+  }),
   [Project.TealswapV3]: createProject({
     company: Company.SoohoIo,
     projectType: ProjectType.Work,

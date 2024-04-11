@@ -12,6 +12,7 @@ export enum ProjectType {
   Personal = '개인',
 }
 export enum Project {
+  CryptoErp = 'Crypto ERP',
   SoohoIoHomepage = 'SOOHO.IO Homepage',
   TealswapV3 = 'Tealswap V3',
   Mitosis = 'Mitosis Beta',

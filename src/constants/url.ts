@@ -13,6 +13,7 @@ export const ARTICLE_URLS = [
 ];
 
 export const SERVICE_URLS: Record<Project, string> = {
+  [Project.CryptoErp]: 'https://crypto-erp.sooho.io',
   [Project.SoohoIoHomepage]: 'https://sooho.io',
   [Project.TealswapV3]: 'https://app.tealswap.com/en/',
   [Project.Mitosis]: 'https://mitosis.finance',
@@ -27,6 +28,7 @@ export const SERVICE_URLS: Record<Project, string> = {
 };
 
 export const GIT_REPOSITORY_URLS: Record<Project, string | null> = {
+  [Project.CryptoErp]: null,
   [Project.SoohoIoHomepage]: null,
   [Project.TealswapV3]: null,
   [Project.Mitosis]: null,

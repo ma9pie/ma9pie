@@ -1,6 +1,15 @@
 import { Project, TechStack } from '@/types';
 
 export const PROJECT_TECH_STACK: Record<Project, TechStack[]> = {
+  [Project.CryptoErp]: [
+    TechStack.NextJs,
+    TechStack.React,
+    TechStack.TypeScript,
+    TechStack.Jotai,
+    TechStack.Emotion,
+    TechStack.TailwindCSS,
+    TechStack.NextI18next,
+  ],
   [Project.SoohoIoHomepage]: [
     TechStack.NextJs,
     TechStack.React,
