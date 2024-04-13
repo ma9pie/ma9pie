@@ -1,4 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
+import moment from 'moment';
 
 import { axios } from '@/utils';
 
@@ -14,7 +15,7 @@ const useCommit = () => {
         `https://api.github.com/repos/${owner}/${repo}/branches/${branch}`
       );
       const lastCommitTime = res.commit.commit.committer.date;
-      const date = new Date(lastCommitTime).toLocaleDateString();
+      const date = moment(lastCommitTime).format('YYYY. MM. DD');
       return date;
     } catch (err) {
       console.log(err);
