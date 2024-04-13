@@ -1,11 +1,11 @@
 import React from 'react';
 import tw, { styled } from 'twin.macro';
 
-import Spacing from '@/components/common/Spacing';
 import Text from '@/components/common/Text';
 import Divider from '@/components/layouts/Divider';
 import CashierestMobile from '@/components/pages/portfolio/CashierestMobile';
 import CashierestWeb from '@/components/pages/portfolio/CashierestWeb';
+import CryptoErp from '@/components/pages/portfolio/CryptoErp';
 import FEInterview from '@/components/pages/portfolio/FEInterview';
 import Info from '@/components/pages/portfolio/Info';
 import Mitosis from '@/components/pages/portfolio/Mitosis';
@@ -18,50 +18,18 @@ import TodoListApp from '@/components/pages/portfolio/TodoListApp';
 import VivaLeva from '@/components/pages/portfolio/VivaLeva';
 
 const SECTIONS = [
-  {
-    key: 'tealswapV3',
-    Component: TealswapV3,
-  },
-  {
-    key: 'sooho-io-homepage',
-    Component: SoohoIoHomepage,
-  },
-  {
-    key: 'mitosis',
-    Component: Mitosis,
-  },
-  {
-    key: 'vivaleva',
-    Component: VivaLeva,
-  },
-  {
-    key: 'purple-bridge',
-    Component: PurpleBridge,
-  },
-  {
-    key: 'cashierest-web',
-    Component: CashierestWeb,
-  },
-  {
-    key: 'cashierest-mobile',
-    Component: CashierestMobile,
-  },
-  {
-    key: 'todo-list-app',
-    Component: TodoListApp,
-  },
-  {
-    key: 'ppgg',
-    Component: PPGG,
-  },
-  {
-    key: 'fe-interview',
-    Component: FEInterview,
-  },
-  {
-    key: 'polypoli',
-    Component: Polypoli,
-  },
+  CryptoErp,
+  TealswapV3,
+  SoohoIoHomepage,
+  Mitosis,
+  VivaLeva,
+  PurpleBridge,
+  CashierestWeb,
+  CashierestMobile,
+  TodoListApp,
+  PPGG,
+  FEInterview,
+  Polypoli,
 ];
 
 const Portfolio = () => {
@@ -72,8 +40,8 @@ const Portfolio = () => {
         <Info></Info>
       </Container>
 
-      {SECTIONS.map(({ key, Component }, idx) => (
-        <section key={key}>
+      {SECTIONS.map((Component, idx) => (
+        <section key={idx}>
           <Divider></Divider>
           <Component></Component>
         </section>

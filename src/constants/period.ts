@@ -1,8 +1,9 @@
 import { Period, Project } from '@/types';
 
 export const PROJECT_PERIOD: Record<Project, Period> = {
+  [Project.CryptoErp]: ['2024.04', '2024.04'],
   [Project.SoohoIoHomepage]: ['2024.02', '2024.02'],
-  [Project.TealswapV3]: ['2023.12', '2024.03'],
+  [Project.TealswapV3]: ['2023.12', '2024.04'],
   [Project.Mitosis]: ['2023.11', '2023.11'],
   [Project.VivaLeva]: ['2023.07', '2023.12'],
   [Project.PurpleBridge]: ['2023.03', '2023.06'],

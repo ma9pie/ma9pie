@@ -1,7 +1,7 @@
 import { Period } from '@/types';
 
 export const formatDate = (str: string) => {
-  const date = new Date(str);
+  const date = new Date(str.replace(/-/g, '/'));
   return `${date.getFullYear()}.${(date.getMonth() + 1)
     .toString()
     .padStart(2, '0')}`;

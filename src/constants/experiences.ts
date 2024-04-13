@@ -32,6 +32,17 @@ export const EXPERIENCES: Experience[] = [
     workingPeriod: ['2023.03', null],
     projects: [
       createProject({
+        project: Project.CryptoErp,
+        active: true,
+        description: `${Project.CryptoErp}는 각 기업마다 암호화폐 회계 관리의 표준을 제공하고 사업적 파트너쉽을 위해서 AWS AMB Query를 활용하여 개발한 암호화폐 회계 관리 대시보드 SaaS PoC 프로젝트 입니다. 가장 빠르게 개발 가능한 인력으로 투입되어 6일간 개발하여 완성하였습니다.`,
+        tasks: [
+          'react-hook-form을 통한 Login, Sign Up 기능 구현',
+          'User info modal, wallet add & delete 기능 구현',
+          'Portfolio 페이지 기능 구현',
+          'PNL history 페이지 기능 구현',
+        ],
+      }),
+      createProject({
         project: Project.TealswapV3,
         active: true,
         description: 'Uniswap v3 기능 개발 담당',
