@@ -1,10 +1,9 @@
+import moment from 'moment';
+
 import { Period } from '@/types';
 
-export const formatDate = (str: string) => {
-  const date = new Date(str.replace(/-/g, '/'));
-  return `${date.getFullYear()}.${(date.getMonth() + 1)
-    .toString()
-    .padStart(2, '0')}`;
+export const formatDate = (date: string) => {
+  return moment(date).format('YYYY.MM');
 };
 
 export const formatWorkingPeriod = (period: Period) => {
