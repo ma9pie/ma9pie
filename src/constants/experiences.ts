@@ -29,7 +29,7 @@ export const EXPERIENCES: Experience[] = [
   {
     company: Company.SoohoIo,
     position: Position.Frontend,
-    workingPeriod: ['2023.03', null],
+    workingPeriod: ['2023-03', null],
     projects: [
       createProject({
         project: Project.CryptoErp,
@@ -111,7 +111,7 @@ export const EXPERIENCES: Experience[] = [
   {
     company: Company.Newlink,
     position: Position.Frontend,
-    workingPeriod: ['2022.03', '2023.03'],
+    workingPeriod: ['2022-03', '2023-03'],
     projects: [
       createProject({
         project: Project.CashierestWeb,
