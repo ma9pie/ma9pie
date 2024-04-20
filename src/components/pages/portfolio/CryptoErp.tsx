@@ -30,7 +30,7 @@ const CryptoErp = () => {
 
       <Text.P>
         주요 기능의 경우 계정에 등록된 wallet들의 자산을 aggregation하여 자산
-        변동률, 자산 현황, PNL 현황 및 히스토리를 보여주는 것 입니다.
+        변동률, 자산 현황, PNL 현황 및 히스토리를 보여주는 것입니다.
       </Text.P>
 
       <Spacing height={24}></Spacing>
