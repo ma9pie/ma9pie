@@ -9,7 +9,7 @@
 
 <br/>  
 
-요즘에는 MUI, Ant Design, NextUI와 같은 큰 규모의 UI 라이브러리를 참고하면서 Lite UI라는 UI 라이브러리를 개발 중입니다.
+요즘에는 NextUI, MUI, Ant Design과 같은 큰 규모의 UI 라이브러리를 참고하면서 Lite UI라는 UI 라이브러리를 개발 중입니다.
 
 <br/>  
 
