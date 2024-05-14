@@ -40,6 +40,6 @@
 
 
 # 🔗 Link
-👨🏻‍💻 Tech blog : https://cocoon1787.tistory.com  
+👨🏻‍💻 Blog : https://cocoon1787.tistory.com  
 ✉️ Contact : ma9pie.dev@gmail.com  
 
