@@ -1,3 +1,3 @@
 export enum Position {
-  Frontend = 'Frontend Developer',
+  Frontend = 'Frontend Engineer',
 }

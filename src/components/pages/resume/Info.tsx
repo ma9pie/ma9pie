@@ -43,7 +43,7 @@ const Info = () => {
     <Content>
       <div>
         <Title>안녕하세요.</Title>
-        <Title>Frontend Developer</Title>
+        <Title>Frontend Engineer</Title>
         <Title>김준영입니다.</Title>
       </div>
       <InfoBox>

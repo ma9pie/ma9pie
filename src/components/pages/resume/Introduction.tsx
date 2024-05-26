@@ -10,7 +10,7 @@ const Introduction = () => {
 
       <div>
         <Text.P>
-          안녕하세요. 3년차 Frontend Developer 김준영이라고 합니다.
+          안녕하세요. 3년차 Frontend Engineer 김준영이라고 합니다.
         </Text.P>
         <Text.P>
           저는 사용자에게 좋은 경험을 전달하는 것에 관심이 많고, 이를 위해 유저
