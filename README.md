@@ -1,5 +1,5 @@
 # 💎 Simple is best
-👋 안녕하세요 Frontend Developer 김준영입니다.  
+👋 안녕하세요 Frontend Engineer 김준영입니다.  
 📝 글쓰기처럼 논리 정연하고 깔끔한 코드 작성을 지향합니다.  
 🛠️ 재사용성과 효율성을 위한 리팩토링에 시간을 많이 투자하는 편입니다.  
 ✨ 제품의 퀄리티와 사용자에게 좋은 경험을 전달하는 것을 중요시합니다.  
@@ -9,7 +9,7 @@
 
 <br/>  
 
-요즘에는 NextUI, MUI, Ant Design과 같은 큰 규모의 UI 라이브러리를 참고하면서 Lite UI라는 UI 라이브러리를 개발 중입니다.
+요즘에는 NextUI, MUI, Ant Design과 같은 큰 규모의 UI 라이브러리들을 참고하면서 [Lite UI](https://liteui-web.vercel.app) 라는 UI 라이브러리를 개발 중입니다.  
 
 <br/>  
 
