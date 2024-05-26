@@ -27,9 +27,15 @@ const createProject = ({
 
 export const EXPERIENCES: Experience[] = [
   {
+    company: Company.BithumbKorea,
+    position: Position.Frontend,
+    workingPeriod: ['2024-05', null],
+    projects: [],
+  },
+  {
     company: Company.SoohoIo,
     position: Position.Frontend,
-    workingPeriod: ['2023-03', null],
+    workingPeriod: ['2023-03', '2024-05'],
     projects: [
       createProject({
         project: Project.CryptoErp,

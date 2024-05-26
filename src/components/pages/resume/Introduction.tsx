@@ -2,6 +2,8 @@ import React from 'react';
 
 import Text from '@/components/common/Text';
 import Content from '@/components/pages/resume/Content';
+import { CAREER_START_DATE } from '@/constants';
+import { calcCareerYears } from '@/utils';
 
 const Introduction = () => {
   return (
@@ -10,7 +12,9 @@ const Introduction = () => {
 
       <div>
         <Text.P>
-          안녕하세요. 3년차 Frontend Engineer 김준영이라고 합니다.
+          {`안녕하세요. ${calcCareerYears(
+            CAREER_START_DATE
+          )}년차 Frontend Engineer 김준영이라고 합니다.`}
         </Text.P>
         <Text.P>
           저는 사용자에게 좋은 경험을 전달하는 것에 관심이 많고, 이를 위해 유저

@@ -3,6 +3,7 @@ import { Position, TechStack } from '@/types';
 export type Period = [string, string | null];
 export type Service = { url: string; active: boolean };
 export enum Company {
+  BithumbKorea = 'Bithumb Korea',
   SoohoIo = 'SOOHO.IO',
   Newlink = 'Newlink',
 }
