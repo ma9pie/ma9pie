@@ -8,21 +8,7 @@
 🤝 상호 존중과 투명성을 바탕으로 동료와의 신뢰를 구축하는 것에 관심이 많습니다.  
 
 <br/>  
-
-# 👨🏻‍💻 GitHub stats
-![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fma9pie&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)
-
-<div style="display: flex">
-    <img width="50%" src="https://api.opgc.me/githubs/users/ma9pie/tag/?theme=dracula" />
-</div>
-
-<div style="display: flex">
-    <img width="100%" src="https://github-profile-trophy.vercel.app/?username=ma9pie&no-bg=true&column=4&theme=darkhub" />
-</div>
-
-<br/>
     
- 
 # 📚 Tech stack
 [![My Skills](https://skillicons.dev/icons?i=html,css,ts,react,nextjs,redux,emotion,tailwind,sass&perline=5)](https://skillicons.dev)
 
